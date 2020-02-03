@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="25px" viewBox="0 0 16 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.822360248,10.7329193 L10.9590062,0.596273292 C11.6596273,-0.104347826 12.7925466,-0.104347826 13.4857143,0.596273292 L15.1701863,2.28074534 C15.8708075,2.98136646 15.8708075,4.11428571 15.1701863,4.80745342 L7.99254658,12 L15.1776398,19.1850932 C15.8782609,19.8857143 15.8782609,21.0186335 15.1776398,21.7118012 L13.4931677,23.4037267 C12.7925466,24.1043478 11.6596273,24.1043478 10.9664596,23.4037267 L0.829813665,13.2670807 C0.12173913,12.5664596 0.12173913,11.4335404 0.822360248,10.7329193 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Work-1-Streamline" transform="translate(-346.000000, -404.000000)">
+            <g id="Right" transform="translate(354.000000, 416.333333) rotate(-180.000000) translate(-354.000000, -416.333333) translate(346.000000, 404.333333)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <rect id="Rectangle" stroke="#979797" fill="#4A4A4A" mask="url(#mask-2)" x="-18.5" y="-14.5" width="82" height="71"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
