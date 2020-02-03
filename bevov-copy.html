@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+      <title>Hi, I'm Hailey. Welcome!</title>
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="css/works.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+      <script type="text/javascript" src="lib/Chocolat-master/jquery.chocolat.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      <!-- 	font awesome -->	
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- 	Chocolat-master css  source:https://www.jqueryscript.net/zoom/Simple-Yet-Versatile-jQuery-Image-Magnifying-Plugin-Zoomple.html-->
+      <link rel="stylesheet" href="lib/Chocolat-master/chocolat.css">
+      <!-- 	Favicon link   -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+            <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P9WKK6K');</script>
+      <!-- End Google Tag Manager -->
+
+
+   </head>
+   <body>
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9WKK6K"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+        <script type="text/javascript">
+          console.clear()
+
+// Probably not a good idea to have auth on the client side for security reasons, but it's still able to be done
+
+const saved = localStorage.getItem('pass')
+const auth = 'password'
+
+const reset = () => {
+  document.body.innerHTML = ''
+  localStorage.removeItem('pass')
+  createPass()
+}
+
+const createReset = (parent) => {
+  let newButton = document.createElement('button')
+  newButton.innerHTML = 'Reset State'
+  newButton.classList = 'c-button c-button--block'
+  newButton.addEventListener('click', reset)
+  parent.append(newButton)
+}
+
+const successPass = () => {
+  document.body.innerHTML = `
+    <div class="c-card">
+      <h1>Success</h1>
+      <p>This is protected content. You're now able to bypass the login anytime you return to this page, unless you clear your local storage or reset your state using the button below.</p>
+    </div>
+  `
+  createReset(document.querySelector('.c-card'))
+}
+
+const createPass = () => {
+  let newCard = document.createElement('div')
+  newCard.classList = 'c-card'
+  newCard.innerHTML = `
+    <h3>Sorry, this content is protected</h3>
+    <p>If you'd like to access this content, please enter the password</p>
+    <div class="c-control">
+      <div class="c-control__header">
+        <label class="c-control__label">Password</label>
+        <button class="c-control__toggle">Show</button>
+      </div>
+      <input class="c-control__input" placeholder="Enter the project password" id="abcdefg" type="password"/>
+    </div>
+    <button class="c-button c-button--block" id="start">Authenticate</button>
+  `
+  let passInput = newCard.querySelector('#abcdefg')
+  let passSubmit = newCard.querySelector('#start')
+  let passToggle = newCard.querySelector('.c-control__toggle')
+  
+  passToggle.addEventListener('click', () => {
+    let type = passInput.getAttribute('type')
+    const changeToText = () => {
+      passInput.setAttribute('type', 'text')
+      passToggle.innerHTML = 'Hide'
+    }
+    const changeToPass = () => {
+      passInput.setAttribute('type', 'password')
+      passToggle.innerHTML = 'Show'
+    }
+    type == 'password' ? changeToText() : changeToPass()
+  })
+  
+  const inputFail = (text) => {
+    let createHelp = () => {
+      let newHelpText = document.createElement('small')
+      newHelpText.classList = 'c-control__help'
+      newHelpText.innerHTML = text
+      passInput.parentNode.append(newHelpText)
+    }
+    let helpState = passInput.parentNode.querySelector('.c-control__help')
+    helpState ? helpState.innerHTML = text : createHelp()
+  }
+  
+  const checkPass = () => {
+   if(passInput.value.length < 1) {
+      inputFail('You didn\'t enter a password')
+    } else {
+      passInput.value == auth ? successPass() : inputFail(`Psst.. the password is "${auth}"`)
+      localStorage.setItem('pass', 'authenticated')
+    }
+  }
+  
+  const assignInputs = (el) => {
+    el.addEventListener('keyup', (e) => {
+      if(el === document.activeElement && e.key === "Enter") {
+        checkPass()
+      }
+    })
+  }
+  
+  assignInputs(passInput)
+  
+  passSubmit.addEventListener('click', checkPass) 
+  document.body.append(newCard)
+}
+
+const checkPerms = saved ? successPass() : createPass()
+
+checkPerms
+
+    </script>
+
+
+    <!-- End Google Tag Manager (noscript) -->
+      <style type="text/css">
+         .final-design{
+         height: 100vh;
+         background-image: url('images/works/streamline/streamline-final-design.jpg');
+         background-repeat: none;
+         background-attachment: fixed;
+         background-size: cover;
+         }
+         .case-button {
+         width: auto;
+         border: 1px solid #ffffff;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #2bace2;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+      }
+
+
+      .case-button:hover{
+         color: white;
+         background-color: transparent;
+         box-shadow: 0 5px 15px -6px rgba(0, 0, 0, 0.2);
+      }
+
+      .case-button:active{
+         background-color: #2bace2;
+      }
+
+       .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+        cursor: pointer;
+    }
+    
+    header, #top{
+      background: #2bace2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #2bace2, #48b1bf, #48b1bf, #2bace2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #2bace2, #48b1bf, #48b1bf, #2bace2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+      .button_container span {
+        background: #ffffff;
+
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Public+Sans:400,700,900&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Public Sans', system-ui;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+}
+
+h4, h5, h6 {
+  font-weight: 700;
+}
+
+button, input {
+  color: inherit;
+  font-family: inherit;
+}
+button:focus, button:active, input:focus, input:active {
+  outline: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.c-card {
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  width: 100%;
+  max-width: 36rem;
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+}
+
+.c-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+.c-control__label {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+.c-control__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.c-control__input {
+  border-radius: 0.4rem;
+  border: 0;
+  background: rgba(0, 0, 0, 0.12);
+  padding: 1.6rem;
+  margin-top: 0.8rem;
+  transition: all 120ms ease-out 0s;
+}
+.c-control__input:focus {
+  background: rgba(0, 0, 0, 0.08);
+}
+.c-control__toggle {
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: rgba(106, 90, 205, 0.12);
+  border: 0;
+  color: slateblue;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.8rem;
+}
+.c-control__help {
+  color: tomato;
+  margin-top: 0.8rem;
+}
+
+.c-button {
+  cursor: pointer;
+  border: 0;
+  background: slateblue;
+  color: white;
+  border-radius: 0.4rem;
+  padding: 1.2rem 1.6rem;
+  display: inline-block;
+  transition: all 120ms ease-out 0s;
+}
+.c-button--block {
+  display: block;
+  width: 100%;
+}
+.c-button:hover {
+  opacity: 0.87;
+}
+.c-button:focus, .c-button:active {
+  box-shadow: 0px 0px 0px 0.4rem rgba(106, 90, 205, 0.38);
+}
+.c-button:active {
+  background: #4836b3;
+}
+
+
+      </style>
+      <header class="nav-down" style="background-color:#2bace2; ">
+          <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <div class="menu-logo"><a href="index.html"><img src="images/home-images/logo-white.svg" alt=""></a></div>
+      <nav class="overlay-menu">
+        <div class="wrapper">
+          <div class="grid">
+            <div class="gutters row flex"> 
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                 <h3 class="list-title">Project List</h3>
+                           <ul>
+                            <li><a href="featured-story.html">Featured Story</a></li> 
+                            <li><a href="hotelzzz.html">Hotelzzz</a></li> 
+
+                             <li><a href="ui-redesign.html">UI Assets Redesign</a></li>                    
+                             
+                            
+
+                             <li><a href="OnePiece.html">OnePiece Work</a></li>
+                             
+                             <li><a href="dogoodpoints.html">Donor Points</a></li> 
+                            
+                            
+                             <li><a href="monster-hunter.html">Monster Hunter</a></li>
+<!--                              <li><a href="amber.html">Amber</a></li> -->
+                             <li><a href="bevov.html">Bevov</a></li>
+                             <li><a href="side-works.html">Visual Works</a></li>                   
+                           </ul>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-none">
+                  <h3 class="list-title">Contact</h3>
+                  <ul>
+                    <li><a href="mailto:design@haileyliu.me">design@haileyliu.me</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></li>
+
+                           
+                  </ul>
+
+                  <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>   
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a target="_blank" href="mailto:design@haileyliu.me"><img src="images/home-images/email-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/"><img src="images/home-images/linkedIn-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://dribbble.com/designbyhailey"><img src="images/home-images/Dribbble-white.svg" class="mobile-social"></a>
+                
+
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+       
+      </nav>
+    </div>
+      </header>
+        <section data-role="page" id="login-page">
+
+    <form id="login-form" class="centered-child my-login-form">
+      <div class="alert">&nbsp;</div>
+
+      <div class="form-control">
+        <input type="Password" class="form-input" id="login-password" placeholder="Password" data-role="none">
+      </div>
+      <div class="form-control">
+        <input class="form-button" type="submit" id="sign-in" value="Enter" data-role="none">
+      </div>
+    </form>
+  </section>
+
+      <div width="100%" style="background-color: #2bace2; margin-top:-10%; padding-top:10%;" id="top">
+         <div class="wrapper">
+            <div class="hearder grid" >
+               <div class="gutters row flex">
+                  
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-4 col-md-5 col-sm-12" style="color: #ffffff" >
+                     <div class="case-summary">
+                        <h1>Bevov</h1>
+							<p style="color:#ffffff; font-size: 21px;">This is a freelance work I did for Bevov Inc. I redesigned their landing page and created a motion graphic video that helped the company present their concept and products to clients and improved the sales team performace. </p>
+							
+                        <div class="case-button-parent animate-scroll" >
+                           <a href="www.bevov.com" >
+                              <div class="case-button">View Site</div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-6 col-md-5 col-sm-12 animate-scroll"><a href="#final-video"><img src="images/works/bevov/bevov-hero.png" class="hero-image"></a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="side-nav animate-scroll">
+         
+         <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#landing-page">Landing Pape</a></li>
+            <li><a href="#initial-idea">Video Concept</a></li>
+            <li><a href="#revision">Iteration</a></li>
+            <li><a href="#final-video">Final Video</a></li>
+            <li><a href="#thoughts">Thoughts</a></li>
+         </ul>
+         <p class="btt"><a href="#top" style="text-decoration: underline; margin-top: 3px;" >BACK TO TOP</a></p>
+      </div>
+      <!-- <div class="side-nav-mobile">
+      	side-menu-mobile
+      </div> -->
+      <section id="overview" data-anchor="overview">
+      	
+         <div class="small-wrapper">
+           <div class="work-section" width="100%"><span style="color:#2bace2">Overview</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>Business Problem</h3>
+                     <p>When the CEO and Co-founder of Bevov are looking for fundings, it took them too much time to explain what the product is, and how it works to each investor and client. Also, the team added some new features to the core product, but the original website didn't list out.
+                     </p>
+                     <h3>Design Goal</h3>
+                     <p>1. &nbsp;Redesign the landing page with the updated branding and featured; <br>2.  &nbsp;Create a concept video to expain who is bevov and why bevov is good.
+                     </p>
+                     <h3>DURATION</h3>
+                     <p>5 Weeks</p>
+
+                     <h3>MY ROLE</h3>
+                     <p>UI Designer, Motion Designer</p>
+
+                     <h3>Other Team Member</h3>
+                     <p>1 Copy Writer, 1 Marketing Intern, 1 Business Development Intern</p>
+                   </div>
+
+
+                     
+
+                  
+               </div>
+            </div>
+         </div>
+      </section>
+
+       <div width="100%" style="background-color: #f4f4f4" class="section-color">    
+      <section id="landing-page" data-anchor="landing-page">
+         
+         <div class="small-wrapper">
+           <div class="work-section" width="100%"><span style="color:#2bace2">Landing Page</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3>Landing Page</h3>
+                  
+                </div>
+                   <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p><b>Before</b></p>
+                      <a class="chocolat-image" href="images/works/bevov/bevov-before.png" title="Before">
+                       <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/bevov/bevov-before.png" data-sizes="100vw" src="images/works/bevov/bevov-before.png" data-big="images/works/bevov/bevov-before.png" title="Before">
+                      </a>
+                  </div>
+                  <div class="col-lg-1 col-md-1 col-sm-none">
+                    &nbsp;
+                  </div>
+
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <p><b>Problem</b></p>
+                    <p>The main problem on the original page is that there isn't a clear introduction about the products. Everything there was just a high vision of the products. However, for a recruiting platform that has a lot of competitors such as Greenhouse and Lever, it's essential to show the unique points for Bevov and what the interface will look like.</p>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p><b>After</b></p>
+                      <a class="chocolat-image" href="images/works/bevov/bevov-after.png" title="After">
+                       <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/bevov/bevov-after.png" data-sizes="100vw" src="images/works/bevov/bevov-after.png" data-big="images/works/bevov/bevov-after.png" title="After">
+                      </a>
+                  </div>
+                  
+                  
+               </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <section id="initial-idea" data-anchor="initial-idea">
+      	
+         <div class="small-wrapper">
+           <div class="work-section" width="100%"><span style="color:#2bace2">Video Concept</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>IDEATION</h3>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <p>At first, we thought about to record a demo to show what functionionalties the product could have, so I made some small videos/Gifs and the first draft to demostrate how each main feature works.</p>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>SMALL VIDEO</h3>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><video autoplay muted playsinline><source src="images/works/bevov/ranking.mp4" type="video/mp4"></video></div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>FIRST DRAFT</h3>
+                  </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><video controls playsinline><source src="images/works/bevov/first-draft.mp4" type="video/mp4"></video></div>
+               </div>
+            </div>
+         </div>
+       </section>
+         
+         
+         
+       
+      <section id="revision" data-anchor="revision">
+      	
+         <div class="small-wrapper">
+           <div class="work-section" width="100%"><span style="color:#2bace2">Iteration</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>Testing</h3>
+                     <p>We tested the first draft at differenct places and we realized some problems. First, it didn't explain well who we are. Second, some parts are too fast for new users to follow.</p>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>Takeaways</h3>
+
+                     <p>We can seperate the functional parts as small demo videos to show how different problems can be solved by using our product.</p>
+                     <p>We need a product overview video as well as voice scripts to show who we are, what we do and how it works. </p>
+                  </div>
+
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3 style="color:#2bace2; text-transform: initial;">New Frame Style</h3>
+
+                     <h3>Top 5</h3>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><img src="images/works/bevov/top5.png">
+                     <p>Using artificial intelligence to shortlist the Top 5 candidates out of hundreds of sourced resumes is our USP ( unique selling point).</p></div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>Ranking</h3>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><img src="images/works/bevov/ranking.png">
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>Information</h3>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><img src="images/works/bevov/information.png"></div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>Goal</h3>
+
+                     
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><img src="images/works/bevov/features.png">
+                     <p>Our goal is to convince audiences that using Bevov’s integrated applicant tracking system, they can efficiently manage candidate profiles, schedule interviews and most importantly, HIRE, all in one place!</p></div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>CTA</h3>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><img src="images/works/bevov/CTA.png"><p>At last, we need a Call to Action link for people to go to Bevov.com.</p>           
+            
+            </div>
+
+                  </div>
+
+               </div>
+            </div>
+         
+      </section>
+
+  </div>
+
+    <div width="100%" style="background-color: #2bace2" class="section-color">    
+      <section id="final-video" data-anchor="final-video">
+      	
+         <div class="small-wrapper">
+           <div class="work-section" width="100%"><span style="color:#ffffff">Final Video</span></div>
+           <h3>&nbsp;</h3>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <div class="youtube-player" data-id="AHSRwthIt18"></div>
+                  </div>
+                  
+
+                  
+               </div>
+            </div>
+         </div>
+         
+      </section>
+  </div>
+
+
+
+      <section id="thoughts" data-anchor="thoughts">
+      	
+         
+         <div class="small-wrapper">
+          <div class="work-section" width="100%"><span style="color:#2bace2">Thoughts</span></div>
+            <div class="case-content grid" >
+               <div class="gutters row flex middle">
+                  <div class="col-lg-12 col- md-12 col-sm-12 ">
+                     <p>Working in a startup company is different than working in the Tech Giants. We were in a very early stage and the viewers’ understanding of our company’s product is out top priority. The combination of both audio and visual stimulation in video makes describing complex concepts much easier and more importantly, easier to understand. Also, today’s consumers spend more time consuming digital video than on social media so I believe that consumers would rather watch a video about a product than read about it.</p>
+                  </div>
+               
+               </div>
+            </div>
+         </div>
+      </section>
+      
+
+<section>      
+<div class="small-wrapper the-next-project">
+      <div class="grid" >
+         <div class="gutters row flex middle">
+            <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+               &nbsp;
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+            <a href="side-works.html" id="next-project">
+               <h3>Next Project <i class="icon-chevron-right"> </i></h3>
+            </a>
+            </div>
+      </div>
+      </div>
+   </div>
+</section>
+
+  <footer role="footer" style="position:relative;">
+    <div class="wrapper" style="margin-top: 40px;">
+      <div class="hearder grid">
+        <div class="gutters row flex footer-content"> 
+          <div class="col-lg-6 col-md-6 col-sm-12 all-post" data-aos="fade-up">
+            <p class="footer-title">About</p>
+            <div>
+              <p>My name is Hailey, originally from China, and I am a Product Designer. Design is my way of engaging with human beings and bring to life extraordinary products. </p>
+
+              <p>I am currently working at <a style="text-decoration: underline; color: #f15e57" href="https://www.dogoodpoints.com/">Do Good Points</a>, a community for donating and rewarding.</p> 
+
+              <p>As an adept problem solver, I would make a valuable addition to your team due to my diligent nature when it comes to successfully completing tasks and ensuring positive end-user experiences.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-none all-post" data-aos="fade-up">&nbsp;</div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 all-post" data-aos="fade-up">
+            <p class="footer-title">Contact</p>
+            <div>
+              <p><a href="mailto:design@haileyliu.me" style="text-decoration: underline;">design@haileyliu.me</a></p>
+              <p><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></p>
+              <p><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></p>
+              <p class="case-button"><a href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  
+      
+  
+              <p class="copy-right" style="margin-bottom: 40px;">&copy; 2019  Designed and Coded by Hailey Liu.</p>
+  
+      </footer>
+      
+      <script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.js"></script>
+      <script>
+
+          /* Light YouTube Embeds by @labnol */
+          /* Web: http://labnol.org/?p=27941 */
+
+          document.addEventListener("DOMContentLoaded",
+              function() {
+                  var div, n,
+                      v = document.getElementsByClassName("youtube-player");
+                  for (n = 0; n < v.length; n++) {
+                      div = document.createElement("div");
+                      div.setAttribute("data-id", v[n].dataset.id);
+                      div.innerHTML = labnolThumb(v[n].dataset.id);
+                      div.onclick = labnolIframe;
+                      v[n].appendChild(div);
+                  }
+              });
+
+          function labnolThumb(id) {
+              var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+                  play = '<div class="play"></div>';
+              return thumb.replace("ID", id) + play;
+          }
+
+          function labnolIframe() {
+              var iframe = document.createElement("iframe");
+              var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+              iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+              iframe.setAttribute("frameborder", "0");
+              iframe.setAttribute("allowfullscreen", "1");
+              this.parentNode.replaceChild(iframe, this);
+          }
+
+      </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62455410-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-62455410-1');
+      </script>
+      
+      <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+      <script type="text/javascript" src="lib/retina.js"></script> 
+   </body>
+</html>

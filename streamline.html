@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+      <title>Hi, I'm Hailey. Welcome!</title>
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="css/works.css">
+      <link rel="stylesheet" href="css/responsive.css">
+
+      
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+      <script type="text/javascript" src="lib/Chocolat-master/jquery.chocolat.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Sarabun:700,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+      <!--  font awesome -->  
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!--  Chocolat-master css  source:https://www.jqueryscript.net/zoom/Simple-Yet-Versatile-jQuery-Image-Magnifying-Plugin-Zoomple.html-->
+      <link rel="stylesheet" href="lib/Chocolat-master/chocolat.css">
+      <!--  Favicon link   -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+   </head>
+   <body>
+      <style type="text/css">
+         .final-design{
+         height: 100vh;
+         background-image: url('images/works/streamline/streamline-final-design.jpg');
+         background-repeat: none;
+         background-attachment: fixed;
+         background-size: cover;
+         }
+         .case-button {
+         width: auto;
+         border: 1px solid #ffffff;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #2c89e5;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+         }
+         .case-button:hover{
+         color: white;
+         background-color: transparent;
+         box-shadow: 0 5px 15px -6px rgba(0, 0, 0, 0.2);
+         }
+         .case-button:active{
+         background-color: #2c89e5;
+         }
+         .prototype-button {
+         width: auto;
+         border: 1px solid #2c89e5;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #2c89e5;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+         }
+         .prototype-button:hover{
+         color: #2c89e5;
+         background-color: #f2f2f2;
+         box-shadow: 0 5px 15px -6px rgba(0, 0, 0, 0.2);
+         }
+         .prototype-button:active{
+         background-color: #f2f2f2;
+         }
+
+         header, #top, .gradient{
+         background: #2c89e5; /* fallback for old browsers */        
+         background: -webkit-linear-gradient(to left, #f27a19, #2c89e5); /* Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient(to left, #f27a19, #2c89e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+         }
+
+         #top .wrapper{
+         background:url(images/works/streamline/take-photo.png);
+         background-size: 400px 300px;
+         background-repeat: no-repeat;
+         background-position: right top;
+      }
+
+      .button_container span {
+        background: #ffffff;
+
+      }
+
+         
+      </style>
+      <header class="nav-down" >
+          <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <div class="menu-logo"><a href="index.html"><img src="images/home-images/logo-white.svg" alt=""></a></div>
+      <nav class="overlay-menu">
+        <div class="wrapper">
+          <div class="grid">
+            <div class="gutters row flex"> 
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                 <h2 class="list-title">Project List</h2>
+                    <ul>
+                            <li><a href="featured-story.html">Featured Story</a></li> 
+                            <li><a href="hotelzzz.html">Hotelzzz</a></li> 
+                            <li><a href="bevov.html">Bevov &nbsp; <i class="fas fa-lock"></i></a></li>
+
+                             <li><a href="ui-redesign.html">UI Assets Redesign</a></li>                    
+                             
+                            
+
+                             <li><a href="OnePiece.html">OnePiece Work</a></li>
+                             
+                             <li><a href="dogoodpoints.html">Donor Points</a></li> 
+                            
+                            
+                             <li><a href="monster-hunter.html">Monster Hunter</a></li>
+<!--                              <li><a href="amber.html">Amber</a></li> -->
+                             
+                             <li><a href="side-works.html">Visual Works</a></li>                   
+                           </ul>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-none">
+                  <h2 class="list-title">Contact</h2>
+                  <ul>
+                    <li><a href="mailto:design@haileyliu.me">design@haileyliu.me</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></li>
+
+                           
+                  </ul>
+
+                  <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>   
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a target="_blank" href="mailto:design@haileyliu.me"><img src="images/home-images/email-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/"><img src="images/home-images/linkedIn-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://dribbble.com/designbyhailey"><img src="images/home-images/Dribbble-white.svg" class="mobile-social"></a>
+                
+
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+       
+      </nav>
+    </div>
+      </header>
+      <div width="100%" style="margin-top:-10%; padding-top:10%;" id="top">
+         <div class="wrapper">
+            <div class="hearder grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-4 col-md-4 col-sm-12" style="color: #ffffff" >
+                     <div class="case-summary">
+                        <h1>Streamline</h1>
+                        <p style="color:#ffffff">A mobile app that can help people to get rid of those purposeless photos and free their smartphones'space.</p>
+                        
+                        <div class="case-button-parent col-sm-none">
+                           <a href="https://docs.google.com/presentation/d/18JaYIAhQ8uyvQzhaE8zGZUvJPrOjFHyZX1mYPMRrqts/edit?usp=sharing" target="_blank">
+                              <div class="case-button">Open Presentation</div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-6 col-md-6 col-sm-12"><!-- <img src="images/works/streamline/Streamline-hero.png" class="hero-image"> -->
+                        <div id="streamline-hero-container" style="transform: scale(0.9);">
+         
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="side-nav animate-scroll">
+         
+         <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#initial-idea">Initial Idea</a></li>
+            <li><a href="#research">Marketing Research</a></li>
+            <li><a href="#user-research">Target Audiences</a></li>
+            <li><a href="#solution">Solution</a></li>
+            
+            <li><a href="#design-decisions">Iteration</a></li>
+            <li><a href="#final-design">Final Design</a></li>
+            <li><a href="#prototype">Prototype</a></li>
+            <li><a href="#branding">Branding</a></li>
+            <li><a href="#thoughts">Thoughts</a></li>
+         </ul>
+         <p class="btt"><a href="#top" style="text-decoration: underline; margin-top: 3px;" >BACK TO TOP</a></p>
+      </div>
+      <!-- <div class="side-nav-mobile">
+         side-menu-mobile
+         </div> -->
+      <section id="overview" data-anchor="overview">
+         <div class="small-wrapper">
+            <div class="work-section" style="text-align: left;" width="100%"><span style="color:#2c89e5">Overview</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h3>PROBLEM STATEMENT</h3>
+                     <p>"Pics or it didn't happen!" These days, it seems like some people chronicle every living moment by regularly taking pictures.
+                     </p>
+                     <p>However, It might be numerous similar looking photos or blurred ones in the albums, or people just have too many pictures in their phone so that they cannot find the photo that they need. Moreover, those photos occupied most of their smartphones'space.
+                     </p>
+                     <h3>THE GOAL</h3>
+                     <p>Running out of room on the phone-with no memory left for photos or videos, new apps, or data for the existing apps-can be a disaster. To avoid this scenario, design a mobile app to help users free up some space by clean up their phone album.</p>
+                     <h3>DURATION</h3>
+                     <p>5 Weeks</p>
+                     <h3>MY ROLE</h3>
+                     <p>UX Designer</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="initial-idea" data-anchor="initial-idea">
+         
+         <div class="small-wrapper">
+            <div class="work-section" style="text-align: left;" width="100%"><span style="color:#2c89e5">Initial Idea</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h1 class="titlefont">What's in my mind at the very beginning?</h1>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12" data-chocolat-title="set title" >
+                     <div class="mermaid" style="margin-top: 2em; padding: 5px 15px; text-align: center;">
+                        graph TD
+                        A[I have too many photos in my phone album.] --> B[My iCloud always asks me to buy new storage.]
+                        B -->C[Can someone help me to clean them?]
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <p>Inspired by google image search engine (you can simply drag an image to the search bar and search for similar images), my primary idea is to design an app that can automatically find out all the similar photos on our smartphone that allow us to choose what we want to keep then delete rest of them.</p>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12"><img src="images/works/streamline/streamline-ideation.png"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      
+      
+      <div width="100%" style="background-color: #f4f4f4" class="section-color">
+         <section id="research" data-anchor="research">
+            
+            
+            
+            <div class="small-wrapper">
+               <div class="work-section" style="text-align: left;" width="100%"><span style="color:#2c89e5">Marketing Research</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid" >
+                  <div class="gutters row flex middle">
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h3>DESK RESEARCH</h3>
+                     </div>
+                     <div class="col-lg-12 col- md-12 col-sm-12">
+                        <div class="gutters row flex">
+                           <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;" >
+                           <h1 style="color:#f27a19;font-size: 2em; ">1,200,000 ,000,000</h1> 
+                           <p style="color:#666666;">of digital photos taken worldwide.</p>
+                           </div>
+                           <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;">
+                              
+                              
+                           <h1 style="font-size: 2em; text-align: center; font-family: 'Playfair Display', serif;"><b><a href="https://www.statista.com/chart/10913/number-of-photos-taken-worldwide/" style="text-decoration: none; color:#f27a19; font-family: 'Playfair Display', serif;">85%</a></b></h1>
+                           <p style="color:#666666;"> of them was captured <b style="text-decoration: underline;">on smartphones.</b></p>
+                           </div>
+
+                           <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;">
+                           <h1 style="color:#f27a19;font-size: 2em; ">4.5 million</h1> 
+                           <p style="color:#666666;">smartphones were lost or stolen in the U.S. every year.</p>
+                           </div>
+                           <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;">
+                           <h1 style="font-size: 2em; text-align: center;font-family: 'Playfair Display', serif;"><b><a href="https://www.statista.com/chart/10913/number-of-photos-taken-worldwide/" style="text-decoration: none; color:#f27a19; font-family: 'Playfair Display', serif;">44%</a></b></h1>
+                           <p style="color:#666666;">of women would be overwhelmed by <b style="text-decoration: underline;">sadness</b> since they have memories stored on their devices.</p>
+                           </div>
+                        </div> 
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h3>FIELD RESEARCH</h3>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div style="text-align: center; color:#2c89e5">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.82 102.17" width="50px" fill="#2c89e5">
+                              <title>quote</title>
+                              <g id="Layer_2" data-name="Layer 2">
+                                 <g id="Layer_1-2" data-name="Layer 1">
+                                    <path d="M126.08.18c1.71,5.08-.42,6.9-4.28,8.8C104.29,17.6,93.27,31,92.62,51.3c-.19,6,1,6.55,6.19,3.78,10.15-5.45,20.94-2.7,28.59,7.31,6.55,8.55,5.72,22.11-1.85,30.4C112,107.7,89,104.44,79.34,85.66c-9.55-18.57-6.53-36.94,3.84-54.15C92.93,15.32,108.66,6.8,126.08.18Z"/>
+                                    <path d="M52,0c1.53,5.14,0,7.1-4,8.84C29.73,16.89,18,34.39,18.59,52c.16,5.13,1.25,5.82,5.5,3.5C32.31,51,40.41,51.05,47.9,56.9c8,6.29,11.6,14.75,9.17,24.75-4.77,19.68-28.11,27-43.63,14C4.58,88.19.52,78.4.06,67.14-1,39.49,12.33,20.31,35.86,7.41,40.92,4.64,46.35,2.56,52,0Z"/ >
+                                 </g>
+                              </g>
+                           </svg>
+                           <h2>Lost phone, lost memory.</h2>
+                        </div>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p style=" padding: 0 40px;"><b><a href="http://www.pewresearch.org/fact-tank/2017/01/12/evolution-of-technology/" style="text-decoration: none; color:#4a4a4a">77 percent of Americans now own smartphones</a></b>, and many rely on them for memory support. People capture lots of important moments with their phones, so they need to make sure they're keeping those moments backed up.</p>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div style="text-align: center; color:#2c89e5; padding: 0 40px;">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.82 102.17" width="50px" fill="#2c89e5">
+                              <title>quote</title>
+                              <g id="Layer_2" data-name="Layer 2">
+                                 <g id="Layer_1-2" data-name="Layer 1">
+                                    <path d="M126.08.18c1.71,5.08-.42,6.9-4.28,8.8C104.29,17.6,93.27,31,92.62,51.3c-.19,6,1,6.55,6.19,3.78,10.15-5.45,20.94-2.7,28.59,7.31,6.55,8.55,5.72,22.11-1.85,30.4C112,107.7,89,104.44,79.34,85.66c-9.55-18.57-6.53-36.94,3.84-54.15C92.93,15.32,108.66,6.8,126.08.18Z"/>
+                                    <path d="M52,0c1.53,5.14,0,7.1-4,8.84C29.73,16.89,18,34.39,18.59,52c.16,5.13,1.25,5.82,5.5,3.5C32.31,51,40.41,51.05,47.9,56.9c8,6.29,11.6,14.75,9.17,24.75-4.77,19.68-28.11,27-43.63,14C4.58,88.19.52,78.4.06,67.14-1,39.49,12.33,20.31,35.86,7.41,40.92,4.64,46.35,2.56,52,0Z"/ >
+                                 </g>
+                              </g>
+                           </svg>
+                           <h2 style="align-self: center;">The biggest problem for me is the storage of iCloud is too small, so I have to cancel the auto sync-service and connect the phone with PC every time.</h2>
+                        </div>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        
+                        <p style=" padding: 0 40px;">The free space of iCloud online is only 5GB, which is limitable for many iOS users who plan to store their data from iOS device to iCloud, especially for the people who have more than one iOS device. If they don't want to pay $0.99-$19.99 for extra space every month, they need to free up their iCloud storage.</p>
+                     </div>
+                     <!-- 
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+                           
+                        <div id="Iframe-Liason-Sheet" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                        <div class="responsive-wrapper 
+                        responsive-wrapper-wxh-550x2000">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1rUWDNr8bCftHJGx--0ZUQTc3tsSMu8DqkISjHdsBmCo/edit?usp=sharing"> 
+                        <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+                        An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+                        </iframe>
+                        </div>
+                        </div>
+                        
+                        
+                        </div> -->
+                  </div>
+               </div>
+            </div>
+         </section>
+         
+         
+         
+      </div>
+
+      <div width="100%" style="background-color: #2c89e5; margin-top: 0;" class="section-color gradient">
+         <section id="user-research" data-anchor="user-research">
+            
+            
+            
+            <div class="small-wrapper">
+               <div class="work-section" style="text-align: left;" width="100%"><span style="color:#ffffff">Target Audiences</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid" >
+                  <div class="gutters row flex middle">
+                     <div class="col-lg-12 col- md-12 col-sm-12">
+                        <div class="gutters row flex">
+                           <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center; padding: 0 40px;" >
+                           <h1 style="color:#ffffff;font-size: 2em; ">"Tech-savvy" "</h1> 
+                           <p style="color:#ffffff;">who loves to use smartphone to take photos.</p>
+                           <img src="images/works/streamline/take-photo-phone.png">
+                           </div>
+                           
+
+<!--                            <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;">
+                           <h1 style="color:#f27a19;font-size: 2em; ">4.5 million</h1> 
+                           <p style="color:#666666;">smartphones were lost or stolen in the U.S. every year.</p>
+                           </div>
+                           <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;">
+                           <h1 style="font-size: 2em; text-align: center;"><b><a href="https://www.statista.com/chart/10913/number-of-photos-taken-worldwide/" style="text-decoration: none; color:#f27a19">44%</a></b></h1>
+                           <p style="color:#666666;">of women would be overwhelmed by <b style="text-decoration: underline;">sadness</b> since they have memories stored on their devices.</p>
+                           </div> -->
+                        </div> 
+                     </div>
+
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        
+                        <h3 style="color:#ffffff;">There are two main types of users: </h3>
+                     </div>
+                        <div class="gutters row flex">
+                           <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;" >
+                           <h1 style="color:#ffffff;font-size: 2em; ">"Memorizer"</h1> 
+                           <p style="color:#f2f2f2; text-align: left;">They are emotional, sensitive who are not entirely convinced by the technology. They are afraid of delete photos that record their important memories and they won't be able to get it back anymore.</p>
+                           </div>
+                           <div class="col-lg-6 col- md-6 col-sm-12" style="text-align: center; padding: 0 40px;">
+                              
+                              
+                           <h1 style="font-size: 2em; color:#ffffff; text-align: center;">"Decisiver"</h1>
+                           <p style="color:#ffffff; text-align: left;" >They are decisive who are afraid of trouble, and they just want to delete some useless photos fast to free up their mobilephone's space to improve the performance of their mobilephones.</p>
+                           </div>
+
+
+                        </div> 
+                     
+                  </div>
+               </div>
+            </div>
+         </section>
+         
+         
+         
+      </div>
+
+      <section id="solution" data-anchor="solution">
+         
+         <div class="small-wrapper">
+            <div class="work-section" width="100%"><span style="color:#2c89e5">Solution</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>PRODUCT FEATURES AND CONTENTS</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent" data-chocolat-title="set title">
+                     <a class="chocolat-image" href="images/works/streamline/features&content.png" title="Features & Content">
+                     <img src="images/works/streamline/features&content.png" data-big="images/works/streamline/features&content.png" title="features&content">
+                     </a>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>APP MAP</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent" data-chocolat-title="set title">
+                     <a class="chocolat-image" href="images/works/streamline/app-map.png" title="App Map">
+                     <img src="images/works/streamline/app-map.png" data-big="images/works/streamline/app-map.png" title="App Map">
+                     </a>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>WIREFRAMES</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 wireframe">
+                     <video height="500px" autoplay loop muted>
+                        <source src="images/works/streamline/wireframe.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                     </video>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 wireframe" style=" padding: 0 40px;">
+                     <p>With all the information gathered, I started to design the low fidelity wireframes and prototype by using <a href="https://balsamiq.com/" title="Rapid, effective and fun wireframing software.">Balsamiq</a>. These wireframes helped me to explain the main functions, to show the visual layouts and the prototype was used for the first round user testing that I can see how the user can interact with it.</p>
+                  </div>
+
+                  <section class="lazy slider  chocolat-parent" data-sizes="50vw" style="text-align: center;">
+                        <div class="col-lg-12 col-md-10 col-sm-10" data-chocolat-title="streamline-wireframe-1" >
+
+                          
+                                <div>
+                                  <a class="chocolat-image" href="images/works/streamline/streamline-wireframe-1.png" title="streamline-wireframe-1">
+                              <p><b>Wireframe Examples</b></p>
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-wireframe-1.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-1.png" data-big="images/works/streamline/streamline-wireframe-1.png" title="streamline-wireframe-1">
+                           </a>
+                                </div>
+                          
+                                 <div>
+                                  <a class="chocolat-image" href="images/works/streamline/streamline-wireframe-3.png" title="streamline-wireframe-3">
+                           
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-wireframe-3.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-3.png" data-big="images/works/streamline/streamline-wireframe-3.png" title="streamline-wireframe-3">
+                           </a>
+                                </div>
+                          
+                                <div>
+                                  <a class="chocolat-image" href="images/works/streamline/streamline-wireframe-2.png" title="streamline-wireframe-2">
+                             
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-wireframe-2.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-2.png" data-big="images/works/streamline/streamline-wireframe-2.png" title="streamline-wireframe-2">
+
+                           </a>
+                                </div>
+                          
+                          
+                               
+                               
+                        
+                      </div>
+
+                           <!-- <a class="chocolat-image" href="images/works/streamline/streamline-wireframe-1.png" title="streamline-wireframe-1">
+                              <p><b>Wireframe 1 / 3</b></p>
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-wireframe-1.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-1.png" data-big="images/works/streamline/streamline-wireframe-1.png" title="streamline-wireframe-1">
+                           </a>
+                        </div>
+                        <div class="col-lg-12  col-md-10 col-sm-10" data-chocolat-title="streamline-wireframe-2">
+                          
+                           <a class="chocolat-image" href="images/works/streamline/streamline-wireframe-3.png" title="streamline-wireframe-3">
+                              <p><b>Wireframe 2 / 3</b></p>
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-wireframe-3.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-3.png" data-big="images/works/streamline/streamline-wireframe-3.png" title="streamline-wireframe-3">
+                           </a>
+                        </div>
+                        <div class="col-lg-12 col-md-10 col-sm-10" data-chocolat-title="streamline-wireframe-3">
+                            <a class="chocolat-image" href="images/works/streamline/streamline-wireframe-2.png" title="streamline-wireframe-2">
+                              <p><b>Wireframe 3 / 3</b></p>
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-wireframe-2.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-2.png" data-big="images/works/streamline/streamline-wireframe-2.png" title="streamline-wireframe-2">
+
+                           </a>
+                        </div> -->
+                        
+                  </section>
+
+               </div>
+            </div>
+         </div>
+
+      </section>
+                  <!-- <div class="my-wireframe">
+                     <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-wireframe-1.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-1.png" data-big="images/works/streamline/streamline-wireframe-1.png" title="streamline-wireframe-1">
+                                     
+                    <img data-lazy="http://placehold.it/350x300?text=2-350w" data-srcset="images/works/streamline/streamline-wireframe-2.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-2.png" data-big="images/works/apm/machine-screen-wireframe_Page_1.png" title="streamline-wireframe-2" >
+                    
+                    <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="images/works/streamline/streamline-wireframe-3.png" data-sizes="100vw" src="images/works/streamline/streamline-wireframe-3.png" data-big="images/works/streamline/streamline-wireframe-3.png" title="streamline-wireframe-3">
+                 </div> -->
+      
+      
+      
+      <div width="100%" style="background-color: #f4f4f4" class="section-color">
+        <section id="design-decisions" data-anchor="design-decisions">
+         
+         <div class="small-wrapper">
+            <div class="work-section"  width="100%"><span style="color:#2c89e5">Iteration</span></div>
+         </div>
+         <div class="small-wrapper">
+            
+            
+            
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>USER TESTING</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">              
+                     <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="images/works/streamline/streamline-user-testing.png" data-sizes="100vw" src="images/works/streamline/streamline-user-testing.png" data-big="images/works/streamline/streamline-user-testing.png" title="User Testing">
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>DESIGN CONSIDERATION</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent">
+
+                     <div class="slider">
+                          <div class="slider-for">
+                                <div>
+                                  <a class="chocolat-image" href="images/works/streamline/DESIGN-CONSIDERATION-1.png" title="DESIGN-CONSIDERATION-1">
+                           <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/DESIGN-CONSIDERATION-1.png" data-sizes="100vw" src="images/works/streamline/DESIGN-CONSIDERATION-1.png" data-big="images/works/streamline/DESIGN-CONSIDERATION-1.png" title="Changes-1">
+                           </a>
+                                </div>
+                          
+                                 <div>
+                                  <a class="chocolat-image" href="images/works/streamline/DESIGN-CONSIDERATION-2.png" title="DESIGN-CONSIDERATION-2">
+                           <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/DESIGN-CONSIDERATION-2.png" data-sizes="100vw" src="images/works/streamline/DESIGN-CONSIDERATION-2.png" data-big="images/works/streamline/DESIGN-CONSIDERATION-2.png" title="Changes-2">
+                           </a>
+                                </div>
+                          
+                                <div>
+                                  <a class="chocolat-image" href="images/works/streamline/DESIGN-CONSIDERATION-3.png" title="DESIGN-CONSIDERATION-3">
+                           <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/DESIGN-CONSIDERATION-3.png" data-sizes="100vw" src="images/works/streamline/DESIGN-CONSIDERATION-3.png" data-big="images/works/streamline/DESIGN-CONSIDERATION-3.png" title="Changes-3">
+                           </a>
+                                </div>
+                          
+                          
+                                
+                               
+                          </div>
+                          
+                          
+                          <div class="slider-nav">
+                            <div>
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/DESIGN-CONSIDERATION-1.png" data-sizes="100vw" src="images/works/streamline/DESIGN-CONSIDERATION-1.png" data-big="images/works/streamline/DESIGN-CONSIDERATION-1.png" title="Changes-1">
+                            </div>
+                          
+                             <div>
+                              
+                           <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/DESIGN-CONSIDERATION-2.png" data-sizes="100vw" src="images/works/streamline/DESIGN-CONSIDERATION-2.png" data-big="images/works/streamline/DESIGN-CONSIDERATION-2.png" title="Changes-2">
+                            </div>
+                          
+                            <div>
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/DESIGN-CONSIDERATION-3.png" data-sizes="100vw" src="images/works/streamline/DESIGN-CONSIDERATION-3.png" data-big="images/works/streamline/DESIGN-CONSIDERATION-3.png" title="Changes-3">
+                            </div>
+                           
+                           
+                           
+                        </div>
+                    
+                  </div>
+                
+              </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>MORE DETAILS</h2>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 more-detail">
+                     <h3>Date Picker</h3>
+                     <video height="500px;" autoplay loop muted class="app-video">
+                        <source src="images/works/streamline/date-picker.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                     </video>
+                     <p>
+                        For people who don't want to scan all the photos at one time, they can choose a particular time period to scran and clean.
+                     </p>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                     <h3>Photo Detail</h3>
+                     <video height="500px;" autoplay loop muted class="app-video">
+                        <source src="images/works/streamline/photo-detail.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                     </video>
+                     <p>
+                        For people who want to double check the photos that been selected, they can long press to see their photos in detail.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+     <!--  <section id="final-design" data-anchor="final-design">
+         <div width="100%" style="background-color: #ffffff; z-index: 3">
+            <div class="wrapper">
+               
+               
+               <div class="small-wrapper">
+                  <div class="work-section"  width="100%"><span style="color:#2c89e5">Final Design</span></div>
+               </div>
+               
+               <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent" data-chocolat-title="set title">
+                  <a class="chocolat-image" href="images/works/streamline/streamline-final-design.jpg" title="Final Design">
+                  <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/streamline/streamline-final-design.jpg" data-sizes="100vw" src="images/works/streamline/streamline-final-design.jpg" data-big="images/works/streamline/streamline-final-design.jpg" title="Final Design">
+                  </a>
+               </div>
+            </div>
+         </div>
+         
+         
+         
+      </section> -->
+         
+      </div>
+
+    
+         <section id="final-design" data-anchor="final-design">
+            
+            
+            <div class="small-wrapper">
+               <div class="work-section"  width="100%"><span style="color:#2c89e5">Final Design</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="hearder grid" >
+                  <div class="gutters row flex">
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>( Swipe horizontally to see the whole flow )</h2>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="tab">
+                           <ul class="tabs">
+                              <li style="width: 33.333%; text-align:center;" ><a href="#">01</a></li>
+                              <li style="width: 33.333%; text-align:center;"><a href="#">02</a></li>
+                              <li style="width: 33.333%; text-align:center;"><a href="#">03</a></li>
+                           </ul>
+                           <!-- / tabs -->
+                           <div class="tab_content">
+                              <div class="tabs_item">
+                                 <div style="padding-left: 40px;">
+                                    <h3>01 Delete Duplicates</h3>
+                                   
+                                 </div>
+                                 <!-- <p>Scan</p> -->
+                                 <div class="scroll-image">
+                                    <img src="images/works/streamline/streamline-task1.png">
+                                 </div>
+                              </div>
+                              <!-- / tabs_item -->
+                              <div class="tabs_item">
+                                 <div style="padding-left: 40px;">
+                                    <h3>02 Compress Live Photos</h3>
+                                 </div>
+                                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p> -->
+                                 <div class="scroll-image">
+                                    <img src="images/works/streamline/streamline-task2.png">
+                                 </div>
+                              </div>
+                              <!-- / tabs_item -->
+                              <div class="tabs_item">
+                                 <div style="padding-left: 40px;">
+                                    <h3>03 Backup Recent Cleaned Photos</h3>
+                                 </div>
+                                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam vitae.</p> -->
+                                 <div class="scroll-image">
+                                    <img src="images/works/streamline/streamline-task3.png">
+                                 </div>
+                              </div>
+                              <!-- / tabs_item -->
+                           </div>
+                           <!-- / tab_content -->
+                        </div>
+                        <!-- / tab -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            
+
+         </section>
+
+      <div width="100%" style="background-color: #2c89e5; margin-top:0;" class="section-color gradient" >
+         <section id="prototype" data-anchor="prototype">
+            
+
+           <div class="small-wrapper">
+               <div class="work-section"  width="100%"><span style="color:#ffffff">Prototype</span></div>
+           </div>
+            <div class="small-wrapper">
+               <div class="hearder grid" >
+                  <div class="gutters row flex">
+                     <div class="col-lg-12 col-md-12 col-sm-12 prototype" style="text-align: center;">
+                        <iframe width="442" height="935" src="//invis.io/J3PA38DXB7V" frameborder="0" allowfullscreen style="transform: scale(0.7)"></iframe>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12 prototype-mobile" style="text-align: center;">
+                     <a href="https://invis.io/KXPA386BYEW#/333110937_Get_Started_Copy_20" target="_blank">
+                        <div class="case-button">Try Prototype</div>
+                         
+            
+              
+            
+             
+                     </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <section id="branding" data-anchor="branding">
+            
+            <div class="small-wrapper">
+               <div class="work-section" width="100%"><span style="color:#2c89e5">Branding</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid " >
+                  <div class="gutters row flex">
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>MOODBOARD</h2>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12"><img src="images/works/streamline/moodboard.png"></div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>LOGO DESIGN</h2>
+                     </div>
+                     <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/streamline/Logo-Blue.png" style="padding: 10px 80px;"></div>
+                     <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+                     <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/streamline/Logo-Orange.png" style="padding: 10px 80px;"></div>
+                  </div>
+               </div>
+            </div>
+            
+         </section>
+
+
+      <section id="thoughts" data-anchor="thoughts">
+         <div class="small-wrapper">
+            <div class="work-section" style="text-align: center;" width="100%"><span style="color:#2c89e5">Thoughts</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex middle">
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <p>Although Streamline can help people clean up their phone album, the primary function relies on the technology that automatically finds similar photos. Also, clean up photos is like clean up our rooms. We all know that we should keep it organized, but we are always too lazy to do that.  I think it's important to add some fun to Streamline. The next step for Streamline is to add another function that works the same way as Tinder, <b style="text-decoration: underline;">swipe left to delete the photo and swipe right to keep it</b>. So users can clean up their photos as playing a small game when they are bored, waiting for the bus or eating alone.</p>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <img src="images/works/streamline/keep or not.png">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <div class="small-wrapper the-next-project">
+         <div class="grid" >
+            <div class="gutters row flex middle">
+               <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+                  &nbsp;
+               </div>
+               <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+                  <a href="APM.html" id="next-project">
+                     <h3>Next Project <i class="icon-chevron-right"> </i></h3>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+         <footer role="footer" style="position:relative;">
+      <div class="wrapper" style="margin-top: 40px;">
+         <div class="hearder grid">
+            <div class="gutters row flex footer-content"> 
+               <div class="col-lg-6 col-md-6 col-sm-12 all-post" data-aos="fade-up">
+                  <p class="footer-title">About</p>
+                  <div>
+                     <p>My name is Hailey, originally from China, and I am a Product Designer. Design is my way of engaging with human beings and bring to life extraordinary products. </p>
+
+                     <p>II am currently working at <a style="text-decoration: underline; color: #f15e57" href="https://www.dogoodpoints.com/">Do Good Points</a>, a community for donating and rewarding.</p> 
+
+                     <p>As an adept problem solver, I would make a valuable addition to your team due to my diligent nature when it comes to successfully completing tasks and ensuring positive end-user experiences.</p>
+                  </div>
+               </div>
+
+               <div class="col-lg-2 col-md-2 col-sm-none all-post" data-aos="fade-up">&nbsp;</div>
+
+               <div class="col-lg-4 col-md-4 col-sm-12 all-post" data-aos="fade-up">
+                  <p class="footer-title">Contact</p>
+                  <div>
+                     <p><a href="mailto:design@haileyliu.me" style="text-decoration: underline;">design@haileyliu.me</a></p>
+                     <p><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></p>
+                     <p><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></p>
+                     <p class="case-button"><a href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   
+   
+       
+   
+               <p class="copy-right" style="margin-bottom: 40px;">&copy; 2019  Designed and Coded by Hailey Liu.</p>
+   
+       </footer>
+
+      <script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.js"></script>
+      <script>
+         mermaid.initialize({startOnLoad: true, theme: 'default'});
+
+         $(function(){ 
+
+
+             var animation = bodymovin.loadAnimation({
+              container: document.getElementById('streamline-hero-container'), // Required
+              path: 'data/streamline-ae/data.json', // Required
+              renderer: 'svg', // Required
+              loop: true, // Optional
+              autoplay: true, // Optional
+              name: "Hello", // Name for future reference. Optional.
+            })
+         });
+
+         
+         
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62455410-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-62455410-1');
+      </script>
+      <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+      <script type="text/javascript" src="lib/player/lottie.js"></script>
+      <script type="text/javascript">
+        
+       $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+      });
+  
+      </script>
+<!--       <script type="text/javascript" src="lib/retina.js"></script -->
+   </body>
+</html>

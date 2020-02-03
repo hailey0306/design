@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+      <title>Hi, I'm Hailey. Welcome!</title>
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="css/works.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      <link rel="stylesheet" href="lib/devices.css-master/assets/devices.min.css" type="text/css">
+      
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+      <script type="text/javascript" src="lib/Chocolat-master/jquery.chocolat.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">
+      <!--  font awesome -->  
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!--  Chocolat-master css  source:https://www.jqueryscript.net/zoom/Simple-Yet-Versatile-jQuery-Image-Magnifying-Plugin-Zoomple.html-->
+      <link rel="stylesheet" href="lib/Chocolat-master/chocolat.css">
+      <!--  Favicon link   -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+   </head>
+   <body>
+      <style type="text/css">
+      .case-button {
+         width: auto;
+         border: 1px solid #ffffff;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #FE9524;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+      }
+
+      .case-button:hover{
+         color: white;
+         background-color: transparent;
+         box-shadow: 0 5px 15px -6px rgba(0, 0, 0, 0.2);
+      }
+
+      .case-button:active{
+         background-color: #FE9524;
+         border: 1px solid #FE9524;
+      }
+
+      .prototype-button {
+         width: auto;
+         border: 1px solid #FE9524;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #FE9524;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+      }
+
+      header, #top, .the-section-color{
+         background-color: #FE9524;
+         background: #FE9524; /* fallback for old browsers */        
+         background: -webkit-linear-gradient(to left, #3DC18D,  #FE9524); /* Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient(to left, #3DC18D,  #FE9524); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      #top .wrapper{
+         background:url(images/works/liang-studio/Little_dolly.png);
+         background-size: 300px 300px;
+         background-repeat: no-repeat;
+         background-position: center bottom;
+      }
+
+      .button_container span {
+        background: #ffffff;
+
+      }
+      </style>
+      <header class="nav-down" style="background-color:#FE9524; ">
+          <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <div class="menu-logo"><a href="index.html"><img src="images/home-images/logo-white.svg" alt=""></a></div>
+      <nav class="overlay-menu">
+        <div class="wrapper">
+          <div class="grid">
+            <div class="gutters row flex"> 
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                 <h2 class="list-title">Project List</h2>
+                    <ul>
+                            <li><a href="featured-story.html">Featured Story</a></li> 
+                            <li><a href="hotelzzz.html">Hotelzzz</a></li> 
+                            <li><a href="bevov.html">Bevov &nbsp; <i class="fas fa-lock"></i></a></li>
+
+                             <li><a href="ui-redesign.html">UI Assets Redesign</a></li>                    
+                             
+                            
+
+                             <li><a href="OnePiece.html">OnePiece Work</a></li>
+                             
+                             <li><a href="dogoodpoints.html">Donor Points</a></li> 
+                            
+                            
+                             <li><a href="monster-hunter.html">Monster Hunter</a></li>
+<!--                              <li><a href="amber.html">Amber</a></li> -->
+                             
+                             <li><a href="side-works.html">Visual Works</a></li>                   
+                           </ul>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-none">
+                  <h2 class="list-title">Contact</h2>
+                  <ul>
+                    <li><a href="mailto:design@haileyliu.me">design@haileyliu.me</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></li>
+
+                           
+                  </ul>
+
+                  <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>   
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a target="_blank" href="mailto:design@haileyliu.me"><img src="images/home-images/email-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/"><img src="images/home-images/linkedIn-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://dribbble.com/designbyhailey"><img src="images/home-images/Dribbble-white.svg" class="mobile-social"></a>
+                
+
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+       
+      </nav>
+    </div>
+      </header>
+
+
+      <div width="100%" style="background-color: #FE9524; margin-top:-10%; padding-top:10%;" id="top" class="hero-part">
+         <div class="wrapper">
+            <div class="hearder grid" >
+               <div class="gutters row flex">
+                  
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-4 col-md-4 col-sm-12" style="color: #ffffff" >
+                     <div class="case-summary">
+                     <h1>UI Assets Redesign</h1>
+                     <p style="color:#ffffff; font-size: 18px;">Do Good Points is a start-up company that I am working at right now. This page discusses how I redesigned the some important UI assets on our website as a UI/UX designer. After these smalls changes, our website's bounce rate decreased by 13% and the completes rate increased by 5%.</b></p>
+
+                     <br>
+                     
+                     <div class="case-button-parent"><a href="https://www.donorpoints.com/" target="_blank"><div class="case-button">View Live Site</div></a></div>
+                  </div>
+                  </div>
+                  <!-- <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div> -->
+                  <div class="col-lg-7 col-md-7 col-sm-12"><!-- <img src="images/works/liang-studio/liang-hero.gif" class="hero-image"> -->
+                        <div id="liang-hero-container">
+      
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="side-nav animate-scroll">
+         
+         <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#analysis">Analysis & Solution</a></li>
+<!--             <li><a href="#explore">Expanded View</a></li>
+            <li><a href="#visual">Visual Impression</a></li> -->
+            <li><a href="#final-design">Final Design</a></li>
+            <li><a href="#complement">Complement</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            
+         </ul>
+         <p class="btt"><a href="#top" style="text-decoration: underline; margin-top: 3px;">BACK TO TOP</a></p>
+      </div>
+      <!-- <div class="side-nav-mobile">
+         side-menu-mobile
+      </div> -->
+      <section id="overview" data-anchor="overview">
+         
+         <div class="small-wrapper">
+            <div class="work-section" width="100%"><span style="color:#FE9524">Overview</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h1 class="titlefont">Design in business.</h1>
+                     <p>After we launched our new Do Good Points landing page and user flow, we partnered Affiliate Marketing Platforms to buy more traffic to our site. The traffic started to pick up slowly, but the data showed that people were not donating from our site, so we investigated the problem, and decided to improve our design and build more trust from our users.</p>
+                     <p>I was part of the ambitious project to redesign the Discover Wall to make the call.</p>
+                     <i>To comply with my non-disclosure agreement, I have omitted confidential information in this case study. All information in this case study is my own and does not necessarily reflect the views of Do Good Points.</i>
+
+                     
+                     
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+            
+            
+    <div width="100%" style="background-color: #f4f4f4" class="section-color">    
+      <section id="background" data-anchor="background">
+         
+         <div class="small-wrapper">
+            <div class="work-section" width="100%"><span style="color:#FE9524">Background</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                  <h1 class="titlefont">Asking for donations — it’s intimidating. We get it. </h1>
+
+                  <p>Do Good Points is the first of its kind rewards community. We are not a non-profit who ask for money directly. We want people to come to our site to explore the organizations that they like then make the decision. But why they should come to our site?</p>
+
+                  <p><b>1. Discover. </b></p>
+
+                  <p>There are more than 1.5 million non-profit organizations registered in the U.S. We want people to come to our site to explore charities and get general information so that they can choose which charity they wish to donate to.</p>
+
+                  <p><b>2. Reward. </b></p>
+
+                  <p>For every donation that people make from our site, they can earn points for rewards. </p>
+
+                  <p><b>3. Record.</b></p>
+
+                  <p>We know this question will come during tax season: “Did you make any charitable contributions?” Of course. Did you document that donation? Sigh. Maybe not well enough. Even though we do not make documentation of your donations, we can keep records of the different organizations you donated to so you can track the amounts you paid out to the charities. </p> 
+               </div>
+
+               <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+               <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+               </div>
+            </div>
+         </div>
+         
+      </section>
+  </div>
+     
+    
+
+
+        
+
+
+
+         <div width="100%" class="section-color the-section-color" style="margin-top: 0;">
+            <section id="problem" data-anchor="problem">
+                <div class="small-wrapper">
+                   <div class="work-section" width="100%"><span style="color:#ffffff">Problem</span></div>
+                </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex" >
+                  <div class="col-lg-12 col-md-12 col-sm-12 " style="color:#ffffff"><h1 class="titlefont" >How did we define the problem?</h1>
+
+                  <h3 style="color:#ffffff">BUSINESS PROBLEM</h3>
+
+                   <ul style="color:#ffffff; font-size:18px; padding-bottom: 15px;">
+                      <li>71.43% of our traffic registered for an account. But there was no completes (donations) yet.</li>
+                  </ul>
+
+
+               </div>
+
+               <div class="col-lg-2 col-md-1 col-sm-none ">  
+                     &nbsp;
+                  </div>
+               <div class="col-lg-4 col-md-5 col-sm-12">
+                     <img src="images/works/dgp/data1.png">
+                     <p style="text-align: center; font-size: 14px; color:#ffffff;">Intentional traffic into DOI   </p>
+               </div>
+               <div class="col-lg-4 col-md-5 col-sm-12">
+                  <img src="images/works/dgp/data2.png">
+                  <p style="text-align: center; font-size: 14px; color:#ffffff;">Overall traffic into DOI</p>
+               </div>
+               <div class="col-lg-2 col-md-1 col-sm-none ">  
+                     &nbsp;
+                  </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 " style="color:#ffffff">
+                  <p style="color:#ffffff">Our data is showing that 71.43% of our traffic registered for an account. That was good news that our landing page conversion looked promising. It’s like when people go to a shopping website, and they browse for a while. They are interested in our site, but after they logged in, they didn’t buy anything which means they stopped at the product page, in our case, the discover page. </p> 
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent" >
+                  
+                  <h3 style="color:#ffffff">USER JOURNEY MAP</h3>
+
+                  <p style="color:#ffffff">To help the team understand and address customer needs, I led a workshop to create a journey map for our current product.</p> 
+                  
+
+
+                  <a class="chocolat-image" href="images/works/dgp/User Journey Map.png" title="user-flow">
+                   <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/User Journey Map.png" data-sizes="100vw" src="images/works/dgp/User Journey Map.png" data-big="images/works/dgp/User Journey Map.png" title="user-flow">
+                   </a>
+
+                  <p style="color:#ffffff">We found out that certain places might cause a low conversion rate during the overall experience. Based on the user flow and our through traffic, average page time view as well as the drop-offs data, we decided to work on some small changes on our discover page first.</p>
+
+                  <a class="chocolat-image" href="images/works/dgp/traffic.png" title="traffic example">
+
+                  <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/traffic.png" data-sizes="100vw" src="images/works/dgp/traffic.png" data-big="images/works/dgp/traffic.png" title="traffic">
+                  </a>
+
+                 </div>
+
+
+
+                
+
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12  chocolat-parent">
+
+                  <h3 style="color:#ffffff">Discover Page User Flow</h3>
+                  <p style="color:#ffffff">Here I have a "happy path" user flow related to where I worked on in this implement.</p>
+
+                    <div class="gutters row flex">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                        <a class="chocolat-image" href="images/works/dgp/user-flow.png" title="Work Flow">
+
+                  <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/user-flow.png" data-sizes="100vw" src="images/works/dgp/user-flow.png" data-big="images/works/dgp/user-flow.png" title="Work Flow">
+                  </a>  
+                          
+                          <p style="text-align: center; font-size: 14px;color:#ffffff">Work Flow</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">  
+                          <a class="chocolat-image" href="images/works/dgp/Original-Design.png" title="Original Design">
+
+                          <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/Original-Design.png" data-sizes="100vw" src="images/works/dgp/Original-Design.png" data-big="images/works/dgp/Original-Design.png" title="Original Design">
+                          </a>  
+                          <p style="text-align: center; font-size: 14px;color:#ffffff">Original Design</p>
+                        </div>
+                       <!--  <div class="col-lg-4 col-md-4 col-sm-none ">  
+                          &nbsp;
+                        </div> -->
+                       
+                     </div>
+
+                    
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                  <h3 style="color:#ffffff">USER PROBLEM</h3>
+
+                  <p style="color:#ffffff">Based on what we have on the journey map, here we summarized three main user problems.</p>
+
+                  <ul style="color:#ffffff;font-size:18px; padding-bottom: 15px;">
+
+                      <li>Users feel confused about how the points system works;</li>
+                      <br>
+
+                      <li>There is not enough charities information for users to explore and build trust;</li>
+                      <br>
+                      
+                      <li>Everything looks fine but no attractive points to donate.</li>
+
+                  </ul>
+                </div>
+
+                  
+               
+               <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+               <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+               </div>
+            </div>
+         </div>
+            
+            
+            
+
+            
+         </section>
+         </div>
+
+
+
+
+
+
+      
+
+   
+      <section id="analysis" data-anchor="analysis">
+                <div class="small-wrapper">
+                   <div class="work-section" width="100%"><span style="color:#FE9524">Analysis & Solution</span></div>
+                </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent">
+                     <h1 class="titlefont">1. How can we get people involved in discover?</h1>
+                     <p>For our users to explore different charities, we have a discover wall that lists all the charities we are partnering with. Each charity represented in a small tile including a promo image and the basic introduction in the text labels so that our users have a general idea about the charity.</p> 
+
+                     <p>Here were the changes we made:</p>
+
+                     <p><b>1. Image</b></p>
+
+                     <p>We used to have a square-sized image on the top part of the tile. We realized if we cropped the image to make it shorter, we would <b>have a wider space for other components.</b></p>
+
+                     <p><b>2. Title</b></p>
+
+                     <p>Instead of just placing the charity name, we used “donate to” because we wanted people to make the action. However, the short sentence can make the tile look busier and the word “donate” might intimidate our users. So, we decided to change them back to just the title of the charity.</p>
+
+                     <a class="chocolat-image" href="images/works/dgp/design1.png" title="Crad Redesign">
+                   <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/design1.png" data-sizes="100vw" src="images/works/dgp/design1.png" data-big="images/works/dgp/design1.png" title="Crad Redesign">
+                   </a>
+
+                     <p><b>3. Charity Details</b></p>
+
+                     <p>We wrote an abbreviate content below the title if the users want to see more information. However, this unfinished sentence didn’t make any sense. So, we changed them to <b>a short tagline to engage people to discover more information.</b></p>
+
+                     <p><b>4. Points</b></p>
+
+                     <p>Originally, we told people how many points they would get per dollar that they donate, “Earn seven points per dollar.” But seven points looks and sounds small, and it’s not attractive enough. Some people may be unable to calculate the total amount. Instead, we <b>use the total points they would get per donation. </b>
+
+
+                     </p>
+
+                     <a class="chocolat-image" href="images/works/dgp/design2.png" title="Crad Redesign">
+                   <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/design2.png" data-sizes="100vw" src="images/works/dgp/design2.png" data-big="images/works/dgp/design2.png" title="Crad Redesign">
+                   </a>
+
+                      
+                  </div>
+                  
+
+
+              
+
+                 
+               <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <p>We invited a few people to test our website in a church (A study shows religious individuals are more likely to donate to charity). They liked our concept, but when they saw the charity tile, they didn’t feel there was a clear connection between the value and the points. So, we came up with the idea to create “marketing tile” to <b>educate people how much value our points would have. </b></p>
+               </div>
+               
+               <div class="col-lg-1 col-md-1 col-sm-none ">  
+                     &nbsp;
+                  </div>
+                  <div class="col-lg-4 col-md-5 col-sm-12">
+                  <img src="images/works/dgp/marketing-tile-1.png">
+                  <p style="text-align: center;">Marketing Tile 1</p>
+                     <!-- marketing tile 1-->
+               </div>
+               <div class="col-lg-2 col-md-none col-sm-none ">  
+                     &nbsp;
+                  </div>
+               <div class="col-lg-4 col-md-5 col-sm-12">
+                  <img src="images/works/dgp/Marketing-tile-2.png">
+                  <p style="text-align: center;">Marketing Tile 2</p>
+                     <!-- marketing tile 2-->
+               </div>
+               <div class="col-lg-1 col-md-1 col-sm-none ">  
+                     &nbsp;
+                  </div>
+
+               <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+               <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+               </div>
+            </div>
+         </div>
+            
+            
+            
+
+            
+      </section>
+ 
+    <div width="100%" style="background-color: #F4f4f4" class="section-color" >
+   <div class="fakesection">
+         
+         <div class="small-wrapper">
+            <div class="work-section" width="100%"><span style="color:#FE9524">&nbsp;</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex middle">
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <h1 class="titlefont">2. What do people want to see before donating?</h1>
+                     <p>To redesign the expanded view (the modal window after the user clicks "view charity"), I did the desk research and interviewed a few people to understand what people wanted to know before donating and what kind of charities they donate to. I also realized that people might not understand what “Charity Navigator” is. And people might be interested but still hesitate to donate. </p>
+                   </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                  <h3>DESIGN DECISIONS</h3>
+
+                  <ul style="padding-bottom: 15px; font-size:18px; ">
+                      <li>Change the image to a carousel/slider to show more images and video and drive their emotion;</li>
+                      <br>
+                      <li>Add the spending ratio to show more related data;</li>
+                      <br>
+                      <li>Add an info icon and the hover effect to introduce “Charity Navigator.”</li>
+                      <br>
+                      <li>Add a "Save for Later" button allows users to make the decision later.</li>
+                      <br>
+                  </ul>
+                  </div>
+                  
+
+                  
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent">
+
+                    <a class="chocolat-image" href="images/works/dgp/design3.png" title="Expanded View Redesign">
+                   <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/design3.png" data-sizes="100vw" src="images/works/dgp/design3.png" data-big="images/works/dgp/design3.png" title="Expanded View Redesign">
+                   </a>
+
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                  <h3>TESTING RESULT</h3>
+
+                  <ul style="padding-bottom: 15px; font-size:18px; ">
+                      <li>4/10 of them didn’t understand what the “Program Expenses” and “Accountability & Transparency Score” were;</li>
+                      <br>
+                      <li>6/10 thought if they click "donate now," there would be a payment interface appearing.  </li>
+                  </ul>
+                  </div>
+                   
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <p>After the first round, we did some testing. We found that <b>people didn’t understand what the “Program Expenses” and “Accountability & Transparency Score” meant</b>.  I explained to them that “Program Expense” means the percentage of the charity's total expenses spent on the programs and services it delivers. Some people would still ask, “where is the rest of the money?” even though 89.3% is a very good Program Expenses percentage. Even though save for later is a good feature for users, our marketing team members thought it shouldn't be a button.</p>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                  <h3>ITERATION</h3>
+
+                  <ul style="padding-bottom: 15px; font-size:18px; ">
+                      <li>Keep the basic introduction, but add the categories;</li>
+                      <br>
+                      <li>added charity logo to increase authenticity and make charity more trustable;</li>
+                      <br>
+                      <li>Rather than using "donate now" as a call to action button, Use "donate to them directly" to educate our users that they are not donating to us;</li>
+                      <br>
+                      <li>Change the "Save for Later" button to text.</li>
+                      <br>
+                  </ul>
+                  </div>
+
+               
+
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     
+                     <img src="images/works/dgp/Expanded View v2.jpg">
+                     <p style="text-align: center; font-size: 14px;">(redesigned expanded view v2)</p>
+                     <div class="gutters row flex">
+                        <div class="col-lg-4 col-md-4 col-sm-none ">  
+                          &nbsp;
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">  
+                          <img src="images/works/dgp/Expanded View v2-mobile.jpg">
+                          <p style="text-align: center; font-size: 14px;">(redesigned expanded view v2 Mobile View)</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-none ">  
+                          &nbsp;
+                        </div>
+                       
+                     </div>
+
+                  </div>
+<!--                   <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <p>And of course the mobile view.</p>
+                  </div> -->
+
+
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+      <div class="fakesection">
+         
+         <div class="small-wrapper">
+            <div class="work-section" width="100%"><span style="color:#FE9524">&nbsp;</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex middle">
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+                     <h1 class="titlefont">3. How can we incentivize our users to donate?</h1>
+                     <p>To further encourage our users to donate, we promoted our “Featured Charity” program. When people donate to our featured charity, they can get double points. </p>
+                  </div>
+                   <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+                     <img src="images/works/dgp/Original-discover-wall.png">
+                     <p style="text-align: center; font-size: 14px;">(original discover page shot)</p>
+                     <!-- discover-wall-image -->
+
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <p>At least they will donate to our featured charity, we thought. But the data showed that this hero banner didn’t perform well.</p>
+
+                     <p><b>We want to raise our website’s conversion rate, so we want to attract our users at the very first place.</b> As the web design trends, illustration can turn an average website into something unique, something which identifies and communicates the brand message, and something with the power to seduce us.</p>
+
+                     <p>Also, the button “Learn More” could be too general for our user to understand what they will see after clicking it. Will there be more information about the “Featured Charity” program? Or another selected charity? After discussion, here is what we came up with. </p>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                  <h3>CHANGES WE MADE FOR TOP BANNER</h3>
+
+                  <ul style="padding-bottom: 15px; font-size:18px; ">
+                      <li>Design a new hero banner by using illustrator;</li>
+                      <br>
+                      <li>Change call to action button text from “Learn More” to “View Charity”.</li>
+                      <br>
+                  </ul>
+                  </div>
+                  <br>
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     
+                     <img src="images/works/dgp/banner-illustrator.png">
+                     <p style="text-align:center; font-size: 14px;">( New Hero Banner Desktop View ) </p>
+
+                     <!-- HERO BANNER -->
+
+                  </div>
+                  
+                  <div class="col-lg-2 col-md-1 col-sm-none ">  
+                     &nbsp;
+                  </div>
+                  <div class="col-lg-8 col-md-10 col-sm-12 ">
+                     
+                     <img src="images/works/dgp/featured-charity-hero-banner-mobile.png">
+                     <p style="text-align:center; font-size: 14px;">( Mobile View )</p>
+                     <!-- hero banner mobile -->
+
+                  </div>
+                   <div class="col-lg-2 col-md-1 col-sm-none ">  
+                     &nbsp;
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+         <div width="100%" class="section-color the-section-color" >
+      <section id="final-design" data-anchor="final-design">
+                <div class="small-wrapper">
+                   <div class="work-section" width="100%"><span style="color:#Ffffff">Final Design</span></div>
+                </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+
+               <div class="col-lg-12 col-md-12 col-sm-12 ">  
+                  <h1 class="titlefont">&nbsp;</h1>
+                     <img src="images/works/dgp/new-discover-page.png">
+                     <h3 style="color:#Ffffff">Final Implementation</h3>
+
+
+                      
+
+                        <video id="my-video" class="video-js img lazy" controls preload="auto"   data-setup="{}"  style="max-width: 100%;">
+                              <source src="images/works/dgp/workflow.mp4" type='video/mp4'>
+                           <source src="images/works/dgp/workflow.mp4" type='video/webm'>
+                            </video>
+                  </div>
+
+
+
+               <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+               <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+               </div>
+            </div>
+         </div>
+            
+            
+            
+
+            
+      </div>
+   </div>
+
+   <div width="100%" style="background-color: #F4f4f4; margin-top: 0;" class="section-color" >
+
+   <section id="complement" data-anchor="complement">
+                <div class="small-wrapper">
+                   <div class="work-section" width="100%"><span style="color:#FE9524">Complement</span></div>
+                </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+
+               <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent">  
+                     <h1 class="titlefont">People are attracted by “Gift Cards”.</h1>
+
+                     <p>To improve the overall user experience, I kept testing and iterating this project. One thing I noticed is that our users are attracted by "Gift Cards." They ask questions like, "how can I redeem?" Not just our user, when I was talking about our product, I mentioned "Gift Cards," people around came and asked, "I heard 'Gift Cards,' how can I get one?"</p>
+
+                     <p>Also, according to<a style="text-decoration: underline; color: #4a4a4a;" href="https://blackhawknetwork.com/consumer-gift-card-preferences/">Blackhawk Network’s State of Consumer Gift Card Preferences in 2018</a>, <b>55% of consumers surveyed report being interested in giving or receiving digital gift cards</b> that can be added to a mobile app or digital wallet, especially Millenials.</p> 
+
+                     <p>What makes us different is we rewarding our users after they donated. I redesigned the "Redeem Page" as well because I believe a better redemption experience can incentivize a user to donate.</p>
+                     <br>
+                   
+
+                      
+                    <h3 style="color:#000000">Redeem Page</h3>
+                     <a class="chocolat-image" href="images/works/dgp/gift cards.png" title="Redeem Page">
+                     <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/gift cards.png" data-sizes="100vw" src="images/works/dgp/gift cards.png" data-big="images/works/dgp/gift cards.png" title="Redeem Page">
+                     </a>
+
+                     <h3 style="color:#000000">Gift Card Redeem Expanded View</h3>
+                     <a class="chocolat-image" href="images/works/dgp/Gift Card Redeem expanded view.jpg" title="Gift Card Redeem expanded view">
+                     <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/Gift Card Redeem expanded view.jpg" data-sizes="100vw" src="images/works/dgp/Gift Card Redeem expanded view.jpg" data-big="images/works/dgp/Gift Card Redeem expanded view.jpg" title="Gift Card Redeem expanded view">
+                     </a>
+                     <br>
+
+                     <div class="gutters row flex">
+                        <div class="col-lg-4 col-md-3 col-sm-none ">  
+                          &nbsp;
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">  
+                          <img src="images/works/dgp/Gift Card Redeem expanded view Mobile.jpg">
+                          <p style="text-align: center; font-size: 14px;">( Gift Card Redeem Expanded View Mobile )</p>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-none ">  
+                          &nbsp;
+                        </div>
+                       
+                     </div>
+
+                     <br>
+                     <br>
+                    
+                      <h1 class="titlefont">Double Good Program</h1>
+                     <p>Our fantastic marketing team also came out the "Double Good Program" to give our users an opportunity to donate the points they have earned to a featured redeem charity. We match dollar for dollar, so the points they donate has double the impact! </p>
+                    
+                    <h3 style="color:#000000">Double Good Banner</h3>
+                    <a class="chocolat-image" href="images/visual/banner-illustrator2.png" title="banner design2">
+                        <img class="lazy" src="images/visual/banner-illustrator2.png" data-src="images/visual/banner-illustrator2.png" title="banner design2">
+                    </a>
+
+                    <h3 style="color:#000000">Double Good Redeem Expanded View</h3>
+                     <a class="chocolat-image" href="images/works/dgp/Double Good Redeem expanded view.jpg" title="Double Good Redeem expanded view">
+                     <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/Double Good Redeem expanded view.jpg" data-sizes="100vw" src="images/works/dgp/Double Good Redeem expanded view.jpg" data-big="images/works/dgp/Double Good Redeem expanded view.jpg" title="Double Good Redeem expanded view">
+                     </a>
+
+                     <h3 style="color:#000000">Deliverable Examples</h3>
+
+                     <a class="chocolat-image" href="images/works/dgp/Double Good Redeem expanded view grid.jpg" title="Double Good Redeem Expanded View Grid">
+                     <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/dgp/Double Good Redeem expanded view grid.jpg" data-sizes="100vw" src="images/works/dgp/Double Good Redeem expanded view grid.jpg" data-big="images/works/dgp/Double Good Redeem expanded view grid.jpg" title="Double Good Redeem Expanded View Grid">
+                     </a>
+                     <br>
+                     <br>
+
+                     <div class="gutters row flex">
+                        <div class="col-lg-4 col-md-3 col-sm-none ">  
+                          &nbsp;
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">  
+                          <img src="images/works/dgp/Double Good Redeem expanded view Mobile grid.jpg">
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-none ">  
+                          &nbsp;
+                        </div>
+                       
+                     </div>
+
+
+                     
+
+
+
+
+
+
+
+                  </div>
+
+
+               <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+               <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+               </div>
+            </div>
+         </div>
+            
+            
+            
+
+            
+      </section>
+    </div>
+
+
+
+         <section id="conclusion" data-anchor="conclusion">
+                <div class="small-wrapper">
+                   <div class="work-section" width="100%"><span style="color:#FE9524">Conclusion</span></div>
+                </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+
+               <div class="col-lg-12 col-md-12 col-sm-12 ">  
+                     <h1 class="titlefont">Continuous Iteration, Not Preparation</h1>
+
+                     <p>I know that our current website is not perfect, but we are trying to improve the overall experience day by day. After these smalls changes, <b>our website's bounce rate decreased by 13% and completes rate increased by 5%. </b></p>
+
+                     <p>I was surprised that a recent survey shows that over 40% of the companies still aren’t talking to their end users during development. However, even though we are a small early-stage startup company, we speak to our end-users. We <b>de-risk development by continually listening, testing, and iterating with end-users.</b></p>
+
+                     <p>Note: Because the business owner has changed, this project has been assigned to another designer right now. </p>
+
+                  </div>
+
+
+               <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+               <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+               <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+               </div>
+            </div>
+         </div>
+            
+            
+            
+
+            
+      </section>
+
+
+
+
+<section>      
+<div class="small-wrapper the-next-project">
+      <div class="grid" >
+         <div class="gutters row flex middle">
+            <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+               &nbsp;
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+            <a href="profile-page.html" id="next-project">
+               <h3>Next Project <i class="icon-chevron-right"> </i></h3>
+            </a>
+            </div>
+      </div>
+      </div>
+   </div>
+</section>        
+
+
+
+         <footer role="footer" style="position:relative;">
+      <div class="wrapper" style="margin-top: 40px;">
+         <div class="hearder grid">
+            <div class="gutters row flex footer-content"> 
+               <div class="col-lg-6 col-md-6 col-sm-12 all-post " data-aos="fade-up">
+                  <p class="footer-title">About</p>
+                  <div>
+                     <p>My name is Hailey, originally from China, and I am a Product Designer. Design is my way of engaging with human beings and bring to life extraordinary products. </p>
+
+                     <p>I am currently working at <a style="text-decoration: underline; color: #f15e57" href="https://www.dogoodpoints.com/">Do Good Points</a>, a community for donating and rewarding.</p> 
+
+                     <p>As an adept problem solver, I would make a valuable addition to your team due to my diligent nature when it comes to successfully completing tasks and ensuring positive end-user experiences.</p>
+
+                    
+
+                  </div>
+               </div>
+
+               <div class="col-lg-2 col-md-2 col-sm-none all-post" data-aos="fade-up">&nbsp;</div>
+
+               <div class="col-lg-4 col-md-4 col-sm-12 all-post" data-aos="fade-up">
+                  <p class="footer-title">Contact</p>
+                  <div>
+                     <p><a href="mailto:design@haileyliu.me" style="text-decoration: underline;">design@haileyliu.me</a></p>
+                     <p><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></p>
+                     <p><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></p>
+                     <p class="case-button"><a href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   
+   
+       
+   
+               <p class="copy-right" style="margin-bottom: 40px;">&copy; 2019  Designed and Coded by Hailey Liu.</p>
+   
+       </footer>
+      <script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.js"></script>
+      <script>
+         mermaid.initialize({startOnLoad: true, theme: 'default'});
+
+         $(function(){ 
+
+
+             var animation = bodymovin.loadAnimation({
+              container: document.getElementById('liang-hero-container'), // Required
+              path: 'data/dgp-data/liang-hero.json', // Required
+              renderer: 'svg', // Required
+              loop: true, // Optional
+              autoplay: true, // Optional
+              name: "Hello", // Name for future reference. Optional.
+            })
+         });
+
+
+
+
+      </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62455410-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62455410-1');
+</script>
+      
+      <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+      <script type="text/javascript" src="lib/retina.js"></script> 
+      <script type="text/javascript" src="lib/player/lottie.js"></script>
+   </body>
+</html>

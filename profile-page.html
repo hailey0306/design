@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+      <title>Hi, I'm Hailey. Welcome!</title>
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="css/works.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      <link rel="stylesheet" href="lib/devices.css-master/assets/devices.min.css" type="text/css">
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+      <script type="text/javascript" src="lib/Chocolat-master/jquery.chocolat.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">
+      <!--  font awesome -->  
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!--  Chocolat-master css  source:https://www.jqueryscript.net/zoom/Simple-Yet-Versatile-jQuery-Image-Magnifying-Plugin-Zoomple.html-->
+      <link rel="stylesheet" href="lib/Chocolat-master/chocolat.css">
+      <!--  Favicon link   -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+            <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P9WKK6K');</script>
+      <!-- End Google Tag Manager -->
+
+
+   </head>
+   <body>
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9WKK6K"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+      <style type="text/css">
+         .case-button {
+         width: auto;
+         border: 1px solid #ffffff;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #FE9524;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+         }
+         .case-button:hover{
+         color: white;
+         background-color: transparent;
+         box-shadow: 0 5px 15px -6px rgba(0, 0, 0, 0.2);
+         }
+         .case-button:active{
+         background-color: #FE9524;
+         border: 1px solid #FE9524;
+         }
+         .prototype-button {
+         width: auto;
+         border: 1px solid #FE9524;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #FE9524;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+         }
+         header, #top, .the-section-color{
+         background-color: #FE9524;
+         background: #FE9524; /* fallback for old browsers */        
+         background: -webkit-linear-gradient(to left, #3DC18D,  #FE9524); /* Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient(to left, #3DC18D,  #FE9524); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         }
+         .button_container span {
+         background: #ffffff;
+         }
+      </style>
+      <header class="nav-down" style="background-color:#3DC18D;; ">
+         <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+         <div class="overlay" id="overlay">
+            <div class="menu-logo"><a href="index.html"><img src="images/home-images/logo-white.svg" alt=""></a></div>
+            <nav class="overlay-menu">
+               <div class="wrapper">
+                  <div class="grid">
+                     <div class="gutters row flex">
+                        <div class="col-lg-2 col-md-2 col-sm-none">
+                           &nbsp;
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <h2 class="list-title">Project List</h2>
+                            <ul>
+                            <li><a href="featured-story.html">Featured Story</a></li> 
+                            <li><a href="hotelzzz.html">Hotelzzz</a></li> 
+                            <li><a href="bevov.html">Bevov &nbsp; <i class="fas fa-lock"></i></a></li>
+
+                             <li><a href="ui-redesign.html">UI Assets Redesign</a></li>                    
+                             
+                            
+
+                             <li><a href="OnePiece.html">OnePiece Work</a></li>
+                             
+                             <li><a href="dogoodpoints.html">Donor Points</a></li> 
+                            
+                            
+                             <li><a href="monster-hunter.html">Monster Hunter</a></li>
+<!--                              <li><a href="amber.html">Amber</a></li> -->
+                             
+                             <li><a href="side-works.html">Visual Works</a></li>                   
+                           </ul>
+                       </div>
+                        <div class="col-lg-2 col-md-2 col-sm-none">
+                           &nbsp;
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-none">
+                           <h2 class="list-title">Contact</h2>
+                           <ul>
+                              <li><a href="mailto:design@haileyliu.me">design@haileyliu.me</a></li>
+                              <li><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></li>
+                              <li><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></li>
+                           </ul>
+                           <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>   
+                        </div>
+                        <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                           <a target="_blank" href="mailto:design@haileyliu.me"><img src="images/home-images/email-white.svg" class="mobile-social"></a>
+                           <a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/"><img src="images/home-images/linkedIn-white.svg" class="mobile-social"></a>
+                           <a target="_blank" href="https://dribbble.com/designbyhailey"><img src="images/home-images/Dribbble-white.svg" class="mobile-social"></a>
+                        </div>
+                        <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                           <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <div width="100%" style="background-color: #3DC18D;; margin-top:-10%; padding-top:10%;" id="top" class="hero-part">
+         <div class="wrapper">
+            <div class="hearder grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-4 col-md-4 col-sm-12" style="color: #ffffff" >
+                     <div class="case-summary">
+                        <h1>Profile Page</h1>
+                        <p style="color:#ffffff; font-size: 18px;">Ever since Do Good Points launched last December, we’ve been working on improving our products. Finally, all of the hard work is starting to bear fruit. However, our "profile page" is still in its MVP version, and we now believe that it is necessary to create a new profile page to keep our users engaged.</p>
+                        <br>
+                        <div class="case-button-parent">
+                           <a href="https://www.dogoodpoints.com/" target="_blank">
+                              <div class="case-button">View Live Site</div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div> -->
+                  <div class="col-lg-7 col-md-7 col-sm-12">
+                     <!-- <img src="images/works/liang-studio/liang-hero.gif" class="hero-image"> -->
+                     <img src="images/works/profile-page/profile-page-hero.gif" >
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="side-nav animate-scroll">
+         <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#Iteration1">Iteration1</a></li>
+            <li><a href="#Iteration2">Iteration2</a></li>
+            <li><a href="#process">Deliverables</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+         </ul>
+         <p class="btt"><a href="#top" style="text-decoration: underline; margin-top: 3px;" >BACK TO TOP</a></p>
+      </div>
+      <!-- <div class="side-nav-mobile">
+         side-menu-mobile
+         </div> -->
+      <section id="overview" data-anchor="overview">
+         <div class="small-wrapper">
+            <div class="work-section" width="100%"><span style="color:#3DC18D;">Overview</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h1 class="titlefont">Where to find all my information?</h1>
+                     <p>Do Good Points is a first-of-its-kind rewards community. When members complete “do good” actions, we reward them with credits called Good Points. Good Points can then be redeemed for gift cards from Amazon, Starbucks, and Target. In addition, they can also be used to donate cash to other charities in need.</p>
+                     <p>After the <a href="dogoodpoints.html" style="color:#3DC18D">last implement</a>, our website's bounce rate decreased by 13% and the completes rate increased by 5%. However, we still have a long way to go, there are a lot of problems need to be solved, such as discoverability - some of our users asked where are their points, and the user retention - we didn't have much return users.</p>
+
+                     <h3>Needs</h3>
+
+                     <p>User - "I want to find my personal information quickly and easily."</p>
+
+                     <p>Stakeholder - "We want to collect more user data."</p>
+
+
+
+                     <h3>MY APPROACH</h3>
+                     <p>"How about create a new profile page?"</p>
+
+                     <i>To comply with my non-disclosure agreement, I have omitted confidential information in this case study. All information in this case study is my own and does not necessarily reflect the views of Do Good Points.</i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div width="100%" style="background-color: #f4f4f4" class="section-color">
+         <section id="research" data-anchor="research">
+            <div class="small-wrapper">
+               <div class="work-section" width="100%"><span style="color:#3DC18D;">Research</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid " >
+                  <div class="gutters row flex">
+                     <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent">
+                        <h1 class="titlefont">Why a new profile page?</h1>
+
+                        <h3>CONTEXTUAL INQUIRY</h3>
+                        <p>A user profile is a collection of settings and information associated with a user. Every user should have their own profile page which may be reached from the top right menu (My Account - My profile page). This page contains links to further pages allowing the user to edit their profile information and preferences, manage their behavior in the site.</p>
+                        <p><b>Who could benefit from the user profile page?</b></p>
+                        <p><b>Website owners: </b>since these records serve as the sources of valuable customer data, website owners can better target marketing activities and increase profits.</p>
+                        <p><b>Users: </b>they will be able to receive personalized product/service recommendations, check their activities history and manage their preferences.</p>
+                        <p><b>In this case, I listed two types of user:</b></p>
+                        <ul>
+                          <li>Who signed up but never donate; ( 0 Points )</li>
+                          <li>Who signed up and donated at least once. ( 250+ Points )</li>
+                        </ul>
+                        <br>
+                        <img src="images/works/profile-page/users.jpg">
+                        <p><b>What do users expect to see on the profile page?</b></p>
+                        <div class="quote">
+                           <p>Mental models are the <span style="color:#3DC18D;">assumptions</span> people carry in their minds <span style="color:#3DC18D;">before interacting</span> with a website or application based on past experience.</p>
+                           <p>Information is <span style="color:#3DC18D;">easier to discover</span> when it is in a place that <span style="color:#3DC18D;">matches</span> the user's mental model of where it should be.</p>
+                           <p style="text-align: right;">--Nielsen Norman Group</p>
+                        </div>
+
+                        <h3>OUR (ORIGINAL) PROFILE PAGE</h3>
+                        <img src="images/works/profile-page/current-look2.png">
+                        <p>To better understand what our users might expect from the profile page, I analyzed two profile page from Facebook, a popular social media site, users must be familiar with their own Facebook profile page and Ebates because we have the similar business model (rewarding system).</p>
+                        <h3>FACEBOOK PROFILE PAGE</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/facebook.png" title="facebook profile page">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/facebook.png" data-sizes="100vw" src="images/works/profile-page/facebook.png" data-big="images/works/profile-page/facebook.png" title="facebook profile page">
+                        </a>
+                        <h3>EBATES PROFILE PAGE</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/ebates.png" title="ebates profile page">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/ebates.png" data-sizes="100vw" src="images/works/profile-page/ebates.png" data-big="images/works/profile-page/ebates.png" title="ebates profile page">
+                        </a>
+                        
+                        <h3>PROBLEMS</h3>
+                        <ul>
+                           <li><b>There is a gap between what our users expect and what we used to have.</b></li>
+                           <p>Research suggests that first impressions are critical in determining whether or not to trust someone, and that when a trust breach occurs, it can be difficult to restore. </p>
+                           <li><b>Users cannot check their recent activities including donation history, redemption history, and points status.</b></li>
+                           <p>Meantime, we should focus on competence: letting users know that they’re intelligent, that they’re capable, that they have the ability to act on whatever their intentions are.  Hence, within the account pages, users are extremely “task-oriented,” with a single goal in mind. For example, “changing my password,” “looking up my latest donation,” “checking my points status,” etc.</p>
+                        </ul>
+                        <h3>GOALS</h3>
+                        <ul>
+                           <li  style="padding: 10px 0;"><b>Create a central hub for users to manage their personalized data and preferences;</b></li>
+                           <li  style="padding: 10px 0;"><b>Collect user data for effective marketing;</b></li>
+                           <li  style="padding: 10px 0;"><b>Build user loyalty and encourage them to return.</b></li>
+                           
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <div width="100%" class="section-color the-section-color" style="margin-top: 0;">
+         <section id="solution" data-anchor="solution">
+            <div class="small-wrapper">
+               <div class="work-section" width="100%"><span style="color:#ffffff;">Solution</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid " >
+                  <div class="gutters row flex">
+                     <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent">
+                        <h3 style="color:#ffffff;">PRODUCT SCALE</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/profile-content.png" title="Content">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/profile-content.png" data-sizes="100vw" src="images/works/profile-page/profile-content.png" data-big="images/works/profile-page/profile-content.png" title="Content">
+                        </a>
+                        <p style="color:#ffffff;">We are a small start-up company, so we don't have much of a budget or the time to dedicate towards a large-scale design. I listed what I wanted to be covered in this improvement and discussed this with our development and marketing teams to set the stage for finalizing the content that we need at this current stage.</p>
+                        <ul style="color:#ffffff;">
+                           <li style="color:#ffffff;"><b>Greetings</b> : Name + Email</li>
+                           <p style="color:#ffffff;">I believe that greetings (customized messages) are one of the most effective ways of engaging and converting website visitors. This email is to notify our users that they have the power to choose which email address they use with us.</p>
+                           <li style="color:#ffffff;"><b>Achievements</b> : Current Points Balance + Points In Process</li>
+                           <p style="color:#ffffff;">By using a "Points Bar" to show the users' current points balance and points in process gives them a visual look into the number of points that they can redeem.</p>
+                           <a class="chocolat-image" href="images/works/profile-page/Greetings.png" title="Greetings">
+                           <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Greetings.png" data-sizes="100vw" src="images/works/profile-page/Greetings.png" data-big="images/works/profile-page/Greetings.png" title="Greetings"  style="padding: 20px 0;">
+                           </a>
+                           <br>
+                           <li style="color:#ffffff;"><b>Profiler</b> : General Information</li>
+                           <p style="color:#ffffff;">Another designer from my team, Hua, designed a series of profiler questions to collect more user-data for future design and marketing use.</p>
+                           <div class="gutters row flex">
+                              <div class="col-lg-6 col-md-6 col-sm-12">
+                                 <a class="chocolat-image" href="images/works/profile-page/question empty.png" title="question empty">
+                                 <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/question empty.png" data-sizes="100vw" src="images/works/profile-page/question empty.png" data-big="images/works/profile-page/question empty.png" title="question empty">
+                                 </a>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12">
+                                 <a class="chocolat-image" href="images/works/profile-page/question1.png" title="Greetings">
+                                 <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/question1.png" data-sizes="100vw" src="images/works/profile-page/question1.png" data-big="images/works/profile-page/question1.png" title="Greetings">
+                                 </a>
+                              </div>
+                           </div>
+                           <br>
+                           <li style="color:#ffffff;"><b>Recent Activites</b> : Donation History + Redumption History</li>
+                           <br>
+                           <a class="chocolat-image" href="images/works/profile-page/donation history.png" title="donation history">
+                           <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/donation history.png" data-sizes="100vw" src="images/works/profile-page/donation history.png" data-big="images/works/profile-page/donation history.png" title="donation history">
+                           </a>
+                           <br><br>
+                           <li style="color:#ffffff;"><b>Account Setting</b> : Change Password</li>
+                        </ul>
+                        <h3 style="color:#ffffff;">USER FLOW</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/user-flow.png" title="user-flow">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/user-flow.png" data-sizes="100vw" src="images/works/profile-page/user-flow.png" data-big="images/works/profile-page/user-flow.png" title="user-flow">
+                        </a>
+                        <h3 style="color:#ffffff;">TESTING</h3>
+                        <p style="color:#ffffff;">The big challenge for an early stage company is that we had no user data at all when we first began, let alone the budget for formal user testing. Most of the testing that I conducted were from random people that I invited from church, Starbucks, and my friends. Here are the key findings:</p>
+                        <a class="chocolat-image" href="images/works/profile-page/test-result.png" title="test-result">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/test-result.png" data-sizes="100vw" src="images/works/profile-page/test-result.png" data-big="images/works/profile-page/test-result.png" title="test-result">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <div width="100%" style="background-color: #f4f4f4; margin-top: 0;" class="section-color" >
+         <section id="Iteration1" data-anchor="Iteration1">
+            <div class="small-wrapper">
+               <div class="work-section" width="100%"><span style="color:#3DC18D;">Iteration 1</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid" >
+                  <div class="gutters row flex chocolat-parent">
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h1 class="titlefont">Woohoo!</h1>
+                        <h3>Achievements Bar</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/Achievements-Bar.png" title="Achievements Bar">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Achievements-Bar.png" data-sizes="100vw" src="images/works/profile-page/Achievements-Bar.png" data-big="images/works/profile-page/Achievements-Bar.png" title="Achievements Bar">
+                        </a>
+                        <p>Instead of the confusing points bar, I designed an achievement bar which includes "current points balance", "total donations made", and "lifetime points earned". I also removed the profile image and changed it to "Do Good'er". We are not a non-profit company, but we partner with those charities. We believe we are doing good, and we want our users to feel the same way!  In the meantime, we want them to keep donating and keep doing good.</p>
+                        <h3>General Information</h3>
+                        <p>I redesigned the visual design of the profiler questions by moving the process bar to the button because I saw a survey that shows that<a target="_blank" href="https://www.surveymonkey.com/curiosity/progress-bars-good-bad-survey-survey-says/" style="color:#4a4a4a;"><b> progress bars shown at the bottom of the page improved the completion rate.</b></a> Also, I redesigned the general information form to a shorter way.</p>
+                        <a class="chocolat-image" href="images/works/profile-page/iteration-question1.png" title="iteration question 1">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/iteration-question1.png" data-sizes="100vw" src="images/works/profile-page/iteration-question1.png" data-big="images/works/profile-page/iteration-question1.png" title="iteration question 1">
+                        </a>
+                        <a class="chocolat-image" href="images/works/profile-page/general info.png" title="general info">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/general info.png" data-sizes="100vw" src="images/works/profile-page/general info.png" data-big="images/works/profile-page/general info.png" title="general info">
+                        </a>
+                        <p></p>
+                        <h3>Activities History</h3>
+                        <p>To help users check the donation and redemption history clearer and more comfortable, I added a split light grey background to the form.</p>
+                        <a class="chocolat-image" href="images/works/profile-page/final-donation history.png" title="Activities History">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/final-donation history.png" data-sizes="100vw" src="images/works/profile-page/final-donation history.png" data-big="images/works/profile-page/final-donation history.png" title="Activities History">
+                        </a>
+                        <p></p>
+                        <h3>ITRATION 1 INTERACTION</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/final-design-animate.gif" title="final-design-animate">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/final-design-animate.gif" data-sizes="100vw" src="images/works/profile-page/final-design-animate.gif" data-big="images/works/profile-page/final-design-animate.gif" title="final-design-animate">
+                        </a>
+                        <h3>PROFILE EMPTY STATUS & PROFILE DEFAULT </h3>
+                        <div class="gutters row flex">
+                           <div class="col-lg-6 col-md-6 col-sm-12">
+                              <a class="chocolat-image" href="images/works/profile-page/Account-Profile Empty Status.png" title="Account-Profile Empty Status">
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Account-Profile Empty Status.png" data-sizes="100vw" src="images/works/profile-page/Account-Profile Empty Status.png" data-big="images/works/profile-page/Account-Profile Empty Status.png" title="Account-Profile Empty Status">
+                              </a>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-12">
+                              <a class="chocolat-image" href="images/works/profile-page/Account-Profile-default.png" title="Account-Profile-default">
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Account-Profile-default.png" data-sizes="100vw" src="images/works/profile-page/Account-Profile-default.png" data-big="images/works/Account-Profile-default.png" title="Account-Profile-default">
+                              </a>
+                           </div>
+                        </div>
+                        <h3>DONATION HISTORY & ACCOUNT SETTING</h3>
+                        <div class="gutters row flex">
+                           <div class="col-lg-6 col-md-6 col-sm-12">
+                              <a class="chocolat-image" href="images/works/profile-page/Account-Donation History.png" title="Donation History">
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Account-Donation History.png" data-sizes="100vw" src="images/works/profile-page/Account-Donation History.png" data-big="images/works/profile-page/Account-Donation History.png" title="Donation History" >
+                              </a>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-12">
+                              <a class="chocolat-image" href="images/works/profile-page/Account-Account nochange.png" title="Account Setting">
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Account-Account nochange.png" data-sizes="100vw" src="images/works/profile-page/Account-Account nochange.png" data-big="images/works/profile-page/Account-Account nochange.png" title="Account Setting" >
+                              </a>
+                           </div>
+                        </div>
+                        <h3>Donation History Empty Status</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/Donation History empty status.png" title="Donation History Empty Status">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Donation History empty status.png" data-sizes="100vw" src="images/works/profile-page/Donation History empty status.png" data-big="images/works/profile-page/Donation History empty status.png" title="Donation History Empty Status">
+                        </a>
+                        <h3>&nbsp;</h3>
+
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <div width="100%" class="section-color the-section-color" style="margin-top: 0;">
+         <section id="Iteration2" data-anchor="Iteration2">
+            <div class="small-wrapper">
+               <div class="work-section" width="100%"><span style="color:#ffffff;">Iteration 2</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid " >
+                  <div class="gutters row flex">
+                     <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent">
+                        <p style="color:#FFFFFF;">After creating the new design, I did a second round testing. Nobody can design the perfect user interface, there is no guarantee that the new design does in fact fix the problems. The second test might discover whether the fixes worked or whether they didn't. Also, in introducing a new design, there is always the risk of introducing a new usability problem, even if the old one did get fixed.</p>
+                        <h3 style="color:#FFFFFF;">Original Design Problem</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/original-edit.png" title="Original Proile Edit">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/original-edit.png" data-sizes="100vw" src="images/works/profile-page/original-edit.png" data-big="images/works/profile-page/original-edit.png" title="Original Proile Edit">
+                        </a>
+                        <p style="color:#FFFFFF;">The way I designed for users to edit their profile information is confusing. The general information came from the survey questions that are either single choices or multiple choices, so the user shouldn't be able to edit by typing the answer directly.</p>
+                        <h3 style="color:#FFFFFF;">Fixed Design</h3>
+                        <div class="gutters row flex">
+                           <div class="col-lg-6 col-md-6 col-sm-12">
+                              <a class="chocolat-image" href="images/works/profile-page/Account-Profile-edit-default.png" title="Account Profile Edit No Change">
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Account-Profile-edit-default.png" data-sizes="100vw" src="images/works/profile-page/Account-Profile-edit-default.png" data-big="images/works/profile-page/Account-Profile-edit-default.png" title="Account Profile Edit No Change">
+                              </a>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-12">
+                              <a class="chocolat-image" href="images/works/profile-page/Account-Profile-edit-option-hovered.png" title="Account Profile Edit Selected">
+                              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/Account-Profile-edit-option-hovered.png" data-sizes="100vw" src="images/works/profile-page/Account-Profile-edit-option-hovered.png" data-big="images/works/profile-page/Account-Profile-edit-option-hovered.png" title="Account Profile Edit Selected">
+                              </a>
+                           </div>
+                        </div>
+                        <h3 style="color:#FFFFFF;">Interaction</h3>
+                        <a class="chocolat-image" href="images/works/profile-page/profile-edit.gif" title="Original Proile Edit">
+                        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/profile-page/profile-edit.gif" data-sizes="100vw" src="images/works/profile-page/profile-edit.gif" data-big="images/works/profile-page/profile-edit.gif" title="Profile Edit Interaction">
+                        </a>
+                        
+                        <h3>&nbsp;</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+
+      <div width="100%" style="background-color: #f4f4f4; margin-top: 0;" class="section-color" >
+        <section id="process" data-anchor="process">
+           <div class="small-wrapper">
+              <div class="work-section" width="100%"><span style="color:#3DC18D;">Deliverables</span></div>
+           </div>
+           <div class="small-wrapper">
+              <div class="case-content grid " >
+                 <div class="gutters row flex">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p>Our development team is located in Vietnam. In order to give explicit instructions to implement my designs, I used Asana to create a task that could be easily reviewed by our PM, and he will transfer the work to our engineers.</p>
+                       <p>I listed all the pages that we needed for the profile page and uploaded all the interfaces (with columns and spacers) to Zeplin. In our shared Google Slide, I also marked all the details and dimensions.</p>
+                       <h3>EXAMPLES</h3>
+                       <img src="images/works/profile-page/google-slide.png">
+                       <img src="images/works/profile-page/sketch.png">                 
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                       <img src="images/works/profile-page/sketch-mobile.png">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                       <img src="images/works/profile-page/Mobile-Donation History.jpg" style="padding:0px 10px 20px 10px;">
+                    </div>
+                    <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+                       <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+                       <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+                       <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+                 </div>
+              </div>
+           </div>
+        </section>
+      </div>
+
+      <section id="conclusion" data-anchor="conclusion">
+         <div class="small-wrapper">
+            <div class="work-section" width="100%"><span style="color:#3DC18D;">Conclusion</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <h1 class="titlefont">Impact</h1>
+                     <p>Helps more than 5K Do Good Points users.</p>
+                     <p>The drop rate on the profile page decreased by 23.8%, and the completes rate of the survey question is 69.23%.</p>
+                     <img src="images/works/profile-page/impact.jpg">
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 ">
+                     <h1 class="titlefont">Think About the Scalability</h1>
+                     <p>User experience is the primary driver for competition today. However, when there are limitations on budget and time, it's hard to decide which features should be implemented first.</p>
+                     <p>We want to strive to achieve the highest amount of growth in the shortest period of time. In order to do that, we need to maximize our resources and fully communicate with different team members to ensure that we have the same goal. The most important goal for us is to design a product with scalability for further development.</p>
+                  </div>
+                  <!-- <div class="col-lg-12 col-md-12 col-sm-12"><h2>LOGO DESIGN</h2></div>
+                     <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-black@4x.png" style="padding: 10px 80px;"></div>
+                     <div class="col-lg-2 col-md-2 col-sm-none">&nbsp;</div>
+                     <div class="col-lg-5 col-md-5 col-sm-12"><img src="images/works/monster-hunter/monster-hunter-logo-white@4x.png" style="padding: 10px 80px;"></div> -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="small-wrapper the-next-project">
+            <div class="grid" >
+               <div class="gutters row flex middle">
+                  <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+                     &nbsp;
+                  </div>
+                  <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+                     <a href="OnePiece.html" id="next-project">
+                        <h3>Next Project <i class="icon-chevron-right"> </i></h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer role="footer" style="position:relative;">
+         <div class="wrapper" style="margin-top: 40px;">
+            <div class="hearder grid">
+               <div class="gutters row flex footer-content">
+                  <div class="col-lg-6 col-md-6 col-sm-12 all-post" data-aos="fade-up">
+                     <p class="footer-title">About</p>
+                     <div>
+                        <p>My name is Hailey, originally from China, and I am a Product Designer. Design is my way of engaging with human beings and bring to life extraordinary products. </p>
+                        <p>I am currently working at <a style="text-decoration: underline; color: #f15e57" href="https://www.dogoodpoints.com/">Do Good Points</a>, a community for donating and rewarding.</p>
+                        <p>As an adept problem solver, I would make a valuable addition to your team due to my diligent nature when it comes to successfully completing tasks and ensuring positive end-user experiences.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-none all-post" data-aos="fade-up">&nbsp;</div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 all-post" data-aos="fade-up">
+                     <p class="footer-title">Contact</p>
+                     <div>
+                        <p><a href="mailto:design@haileyliu.me" style="text-decoration: underline;">design@haileyliu.me</a></p>
+                        <p><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></p>
+                        <p><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></p>
+                        <p class="case-button"><a href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="copy-right" style="margin-bottom: 40px;">&copy; 2019  Designed and Coded by Hailey Liu.</p>
+      </footer>
+      <script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.js"></script>
+      <script>
+         mermaid.initialize({startOnLoad: true, theme: 'default'});
+         
+         $(function(){ 
+         
+         
+             var animation = bodymovin.loadAnimation({
+              container: document.getElementById('liang-hero-container'), // Required
+              path: 'data/dgp-data/liang-hero.json', // Required
+              renderer: 'svg', // Required
+              loop: true, // Optional
+              autoplay: true, // Optional
+              name: "Hello", // Name for future reference. Optional.
+            })
+         });
+         
+         
+         
+         
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62455410-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-62455410-1');
+      </script>
+      <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+      <script type="text/javascript" src="lib/retina.js"></script> 
+      <script type="text/javascript" src="lib/player/lottie.js"></script>
+   </body>
+</html>

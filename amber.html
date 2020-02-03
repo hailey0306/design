@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+      <title>Hi, I'm Hailey. Welcome!</title>
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="css/works.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+      <script type="text/javascript" src="lib/Chocolat-master/jquery.chocolat.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      <!-- 	font awesome -->	
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- 	Chocolat-master css  source:https://www.jqueryscript.net/zoom/Simple-Yet-Versatile-jQuery-Image-Magnifying-Plugin-Zoomple.html-->
+      <link rel="stylesheet" href="lib/Chocolat-master/chocolat.css">
+      <!-- 	Favicon link   -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+            <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P9WKK6K');</script>
+      <!-- End Google Tag Manager -->
+
+
+   </head>
+   <body>
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9WKK6K"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+      <style type="text/css">
+
+         .case-button {
+         width: auto;
+         border: 1px solid #ffffff;
+         border-radius: 2px;
+         background-color: #ffffff;
+         padding: 0.35em 1em;
+         color: #84d3ea;
+         text-align: center;
+         display: inline-block;
+         transition: background-color 400ms ease;
+      }
+
+      .case-button:hover{
+         color: white;
+         background-color: #84d3ea;
+         box-shadow: 0 5px 15px -6px rgba(0, 0, 0, 0.2);
+      }
+
+      .case-button:active{
+         background-color: #84d3ea;
+      }
+
+        .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+        cursor: pointer;
+    }
+
+
+      header, #top{
+         background: #84d3ea; /* fallback for old browsers */        
+         background: -webkit-linear-gradient(to left, #84d3ea, #d8afde); /* Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient(to left, #84d3ea, #d8afde); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      .button_container span {
+        background: #ffffff;
+
+      }
+      
+      </style>
+      <header class="nav-down"">
+          <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <div class="menu-logo"><a href="index.html"><img src="images/home-images/logo-white.svg" alt=""></a></div>
+      <nav class="overlay-menu">
+        <div class="wrapper">
+          <div class="grid">
+            <div class="gutters row flex"> 
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                 <h2 class="list-title">Project List</h2>
+                  <ul>
+                    <li><a href="profile-page.html">Profile Page</a></li>
+                    <li><a href="dogoodpoints.html">Do Good Points</a></li>
+                    <li><a href="OnePiece.html">OnePiece Work</a></li>
+                    <li><a href="streamline.html">Streamline</a></li>
+                    <li><a href="APM.html">APM</a></li>
+                    <li><a href="monster-hunter.html">Monster Hunter</a></li>
+                    <li><a href="amber.html">Amber</a></li>
+                    <li><a href="bevov.html">Bevov</a></li>
+                    <li><a href="side-works.html">Visual Works</a></li>                   
+                  </ul>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-none">
+                  &nbsp;
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-none">
+                  <h2 class="list-title">Contact</h2>
+                  <ul>
+                    <li><a href="mailto:design@haileyliu.me">design@haileyliu.me</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></li>
+
+                           
+                  </ul>
+
+                  <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>   
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a target="_blank" href="mailto:design@haileyliu.me"><img src="images/home-images/email-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/"><img src="images/home-images/linkedIn-white.svg" class="mobile-social"></a>
+                <a target="_blank" href="https://dribbble.com/designbyhailey"><img src="images/home-images/Dribbble-white.svg" class="mobile-social"></a>
+                
+
+              </div>
+              <div class="col-lg-none col-md-none col-sm-12 mobile-contact" >
+                <a class="case-button" href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+       
+      </nav>
+    </div>
+      </header>
+      <div width="100%" style="margin-top:-10%; padding-top:10%;" id="top">
+         <div class="wrapper">
+            <div class="hearder grid" >
+               <div class="gutters row flex">
+                  
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-4 col-md-5 col-sm-12" style="color: #ffffff" >
+                     <div class="case-summary">
+                        <h1>Amber</h1>
+							<p style="color:#ffffff">A product design for future to use augmented reality (AR) contact lenses and in-ear plugs provide a better way for people from different culture to communicate.</p>
+							
+                        <div class="case-button-parent">
+                           <a href="https://drive.google.com/file/d/1cjy_nseybxDQNQ-6TIzTKMR_SKqZQigs/view?usp=sharing" target="_blank">
+                              <div class="case-button">Open PDF</div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-1 col-md-1 col-sm-none">&nbsp;</div>
+                  <div class="col-lg-6 col-md-5 col-sm-12"><img src="images/works/amber/amber-hero@4x.png" class="hero-image" style="padding: 50px;"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="side-nav animate-scroll">
+         
+         <ul>
+            <li><a href="#concept-video">Concept Video</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#branding">Branding</a></li>
+            <li><a href="#interfaces">Interfaces</a></li>           
+            
+            <li><a href="#thoughts">Thoughts</a></li>
+         </ul>
+         <p class="btt"><a href="#top" style="text-decoration: underline; margin-top: 3px;" >BACK TO TOP</a></p>
+      </div>
+      <!-- <div class="side-nav-mobile">
+      	side-menu-mobile
+      </div> -->
+      
+          <section id="concept-video" data-anchor="concept-video">
+            
+            
+            
+            <div class="small-wrapper">
+              <div class="work-section" width="100%"><span style="color:#84d3ea">Concept-Video</span></div>
+
+            </div>
+            <div class="small-wrapper">
+               <div class="hearder grid" >
+                  <div class="gutters row flex">
+                     <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+                      <br>
+                        <div class="youtube-player" data-id="fubR5TqK7gc"></div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            
+          </section>
+
+
+      <section id="overview" data-anchor="overview">
+      	
+         <div class="small-wrapper">
+           <div class="work-section"  width="100%"><span style="color:#84d3ea">Overview</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>PROBLEM STATEMENT</h2>
+                     <p>Interracial relationship is on the rise in the US. However, language can prove to be a communication barrier if interracial people do not adequately understand each others' language. It is frustrating and maddening to sit in front of another human being (One that you wish to befriend because god knows you need one in this new country.) and have ideas, opinions and stories build up like hot steam in a pressure cooker but with no way of expressing them, and transitively, no way of expressing yourself.
+                     </p>
+                     <h2>THE GOAL</h2>
+                     <p>Use technology to improve the dating experience of people who is in an interracial relationship.
+                     </p>
+                     <h2>DURATION</h2>
+                     <p>5 Weeks</p>
+                     <h2>MY ROLE</h2>
+                     <p>Branding, Concepting, Researcher, Animater.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </section>
+
+       <div width="100%" style="background-color: #f4f4f4" class="section-color">
+         	<section id="research" data-anchor="research">
+            
+            <div class="small-wrapper">
+              <div class="work-section" width="100%"><span style="color:#84d3ea">Research</span></div>
+            </div>
+            <div class="small-wrapper">
+               <div class="case-content grid" >
+                  <div class="gutters row flex middle">
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>MARKETING RESEARCH</h2>
+                     </div>
+                     <div class="col-lg-12 col- md-12 col-sm-12">
+                        <ul style="list-style: square inside none">
+                        	<p style="display: list-item; ">
+	                		There are 13 languages spoken by more than 100 million people.
+	                	</p>
+	                	<p style="display: list-item; ">
+	                		There are roughly 6,500 spoken languages in the world.
+	                	</p>
+	                	<p style="display: list-item; ">
+	                		About three in ten, or 29 percent, of Asian newlyweds living in the U.S. entered an interracial marriage in 2015.
+	                	</p>
+	                	
+	            		</ul>
+	            		
+	            		<div style="text-align: center;" >
+                           	<img src="https://pix-media.priceonomics-media.com/blog/1224/image07.png" style="max-width: 60%" >
+                        </div>
+
+                        
+                        <p>Source: <a href="https://priceonomics.com/why-is-interracial-marriage-on-the-rise/" style="text-decoration: none; color:#84d3ea ">priceonomics.com</a></p> 
+                         
+                        
+                     </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+						<h2>What people remember:</h2>
+						
+					
+      					<div class="row gutter amber-icon">
+                        <div class="col-lg-4 col-md-4 col-sm-12" style="text-align: center;">
+                           <div style="height:140px" >
+                              <img src="images/works/amber/hear@4x.png" style="padding: 5px 50px" >
+                           </div>
+                           <h1>20%</h1>
+                           <p>of what they hear</p>
+                        
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12" style="text-align: center;">
+                           <div style="height:140px" >
+                           <img src="images/works/amber/see@4x.png" style="padding: 5px 50px">
+                           </div>
+                           <h1>30%</h1>
+                           <p>of what they see</p>
+                        
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12" style="text-align: center;">
+                           <div style="height:140px" >
+                           <img src="images/works/amber/hear&see@4x.png" style="padding: 5px 50px">
+                           </div>
+                           <h1>70%</h1>
+                           <p>of what they see and hear.</p>
+                        </div>
+                     </div>
+					</div>
+
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>WHAT PEOPLE SAY</h2>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div style="text-align: center; color:#84d3ea">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.82 102.17" width="50px" fill="#84d3ea">
+                              <title>quote</title>
+                              <g id="Layer_2" data-name="Layer 2">
+                                 <g id="Layer_1-2" data-name="Layer 1">
+                                    <path d="M126.08.18c1.71,5.08-.42,6.9-4.28,8.8C104.29,17.6,93.27,31,92.62,51.3c-.19,6,1,6.55,6.19,3.78,10.15-5.45,20.94-2.7,28.59,7.31,6.55,8.55,5.72,22.11-1.85,30.4C112,107.7,89,104.44,79.34,85.66c-9.55-18.57-6.53-36.94,3.84-54.15C92.93,15.32,108.66,6.8,126.08.18Z"/>
+                                    <path d="M52,0c1.53,5.14,0,7.1-4,8.84C29.73,16.89,18,34.39,18.59,52c.16,5.13,1.25,5.82,5.5,3.5C32.31,51,40.41,51.05,47.9,56.9c8,6.29,11.6,14.75,9.17,24.75-4.77,19.68-28.11,27-43.63,14C4.58,88.19.52,78.4.06,67.14-1,39.49,12.33,20.31,35.86,7.41,40.92,4.64,46.35,2.56,52,0Z"/ >
+                                 </g>
+                              </g>
+                           </svg>
+                           <h2>Americans have become more accepting of marriages involving spouses of different races and ethnicities.</h2>
+                        </div>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p style=" padding: 0 20px;">Marrying across racial and ethnic lines has become more common, and more accepted, in the 50 years since a landmark U.S. Supreme Court ruling.</p>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div style="text-align: center; color:#84d3ea; padding: 0 40px;">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.82 102.17" width="50px" fill="#84d3ea">
+                              <title>quote</title>
+                              <g id="Layer_2" data-name="Layer 2">
+                                 <g id="Layer_1-2" data-name="Layer 1">
+                                    <path d="M126.08.18c1.71,5.08-.42,6.9-4.28,8.8C104.29,17.6,93.27,31,92.62,51.3c-.19,6,1,6.55,6.19,3.78,10.15-5.45,20.94-2.7,28.59,7.31,6.55,8.55,5.72,22.11-1.85,30.4C112,107.7,89,104.44,79.34,85.66c-9.55-18.57-6.53-36.94,3.84-54.15C92.93,15.32,108.66,6.8,126.08.18Z"/>
+                                    <path d="M52,0c1.53,5.14,0,7.1-4,8.84C29.73,16.89,18,34.39,18.59,52c.16,5.13,1.25,5.82,5.5,3.5C32.31,51,40.41,51.05,47.9,56.9c8,6.29,11.6,14.75,9.17,24.75-4.77,19.68-28.11,27-43.63,14C4.58,88.19.52,78.4.06,67.14-1,39.49,12.33,20.31,35.86,7.41,40.92,4.64,46.35,2.56,52,0Z"/ >
+                                 </g>
+                              </g>
+                           </svg>
+                           <h2 style="align-self: center;">You need to be patient and to persevere – there may be misunderstandings sometimes, or things may come out in the wrong way.</h2>
+                        </div>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                        
+                        <p style=" padding: 0 20px;">Eventually, people will learn more about the other person and their language. Until then, they need to figure out a way to understand each other rather than only body language or short key phrases.</p>
+                     </div>
+                     <!-- 
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+                        	
+                        <div id="Iframe-Liason-Sheet" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                        <div class="responsive-wrapper 
+                        responsive-wrapper-wxh-550x2000">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1rUWDNr8bCftHJGx--0ZUQTc3tsSMu8DqkISjHdsBmCo/edit?usp=sharing"> 
+                        <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+                        An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+                        </iframe>
+                        </div>
+                        </div>
+                        
+                        
+                        </div> -->
+                  </div>
+               </div>
+            </div>
+        </section>
+            
+            
+            
+      </div>
+      
+
+
+      <section id="solution" data-anchor="solution">
+      	
+         <div class="small-wrapper">
+           <div class="work-section"  width="100%"><span style="color:#84d3ea">Solution</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>PRODUCTS</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent" data-chocolat-title="Products">
+                  	<h3 style="color:#84d3ea">Augmented Reality (AR) Contact Lenses</h3>
+                     <a class="chocolat-image" href="images/works/amber/amber-product-1@2.png" title="In-Ear Plugs">
+                     <img src="images/works/amber/amber-product-1.png" data-big="images/works/amber/amber-product-1@2.png" title="In-Ear Plugs">
+                     </a>
+                     <h3 style="color:#84d3ea">In-Ear Plugs</h3>
+                     
+                     <a class="chocolat-image" href="images/works/amber/amber-product-2@2.png" title="AR Contact Lenses">
+                     <img src="images/works/amber/amber-product-2.png" data-big="images/works/amber/amber-product-2@2.png" title="AR Contact Lenses">
+                     </a>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>USER FLOW</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent" data-chocolat-title="User Flow">
+                     <a class="chocolat-image" href="images/works/amber/user-flow@2.png" title="User Flow">
+                     <img src="images/works/amber/user-flow.png" data-big="images/works/amber/user-flow@2.png" title="User Flow">
+                     </a>
+                  </div>
+                     
+                  </div>
+               </div>
+           </div>
+       </section>
+            
+            
+            
+    <div width="100%" style="background-color: #f4f4f4" class="section-color">    
+      <section id="branding" data-anchor="branding">
+      	
+         <div class="small-wrapper">
+           <div class="work-section" width="100%"><span style="color:#84d3ea">Branding</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid " >
+               <div class="gutters row flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                     <h2>MOODBOARD</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 chocolat-parent" data-chocolat-title="set title">
+                     <a class="chocolat-image" href="images/works/amber/moodboard.png" title="Moodboard">
+                     <img src="images/works/amber/moodboard.png" data-big="images/works/amber/moodboard.png" title="Moodboard">
+                     </a>
+                  </div>
+
+                  
+               </div>
+            </div>
+         </div>
+         
+      </section>
+  </div>
+      <div width="100%" style="background-color: #84d3ea" class="section-color">
+    	  <section id="interfaces" data-anchor="interfaces"> 
+    	  	
+    	  	 <div class="small-wrapper">
+             <div class="work-section" style="text-align: center;" width="100%"><span style="color:#ffffff">Interfaces</span></div>
+           </div>
+
+           <div class="small-wrapper">
+              
+
+              <div class="case-content grid " >
+                 <div class="gutters row flex">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                       <h2 style="color:#ffffff">SET UP NAME</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">					
+                       <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="images/works/amber/set-up-name@2.png" data-sizes="100vw" src="images/works/amber/set-up-name.png" data-big="images/works/amber/set-up-name@2.png" title="User Testing">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                       <h2 style="color:#ffffff">CONTENT</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="images/works/amber/interface-1@2.png" data-sizes="100vw" src="images/works/amber/interface-1.png" data-big="images/works/amber/interface-1@2.png" title="Changes-1">
+                    </div>
+
+                 </div>
+              </div>
+           </div>
+           
+           
+           
+           
+         </section>
+       </div>
+     
+          
+
+
+
+      
+
+      <section id="thoughts" data-anchor="thoughts">
+      	
+         <div class="small-wrapper">
+           <div class="work-section" width="100%"><span style="color:#84d3ea">Thoughts</span></div>
+         </div>
+         <div class="small-wrapper">
+            <div class="case-content grid" >
+               <div class="gutters row flex middle">
+                  <div class="col-lg-12 col- md-12 col-sm-12 ">
+                     <p>A recent report by Digi- Capital suggests that AR will be worth a staggering $108 billion by 2021. 2018 is a breakthrough year for AR. It has reached a tipping point where it is looking to explode into the Main Street and every home will spot an AR device or AR augmented smartphones.</p>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </section>
+      
+<section>      
+<div class="small-wrapper the-next-project">
+      <div class="grid" >
+         <div class="gutters row flex middle">
+            <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+               &nbsp;
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 next-project">
+            <a href="bevov.html" id="next-project">
+               <h3>Next Project <i class="icon-chevron-right"> </i></h3>
+            </a>
+            </div>
+      </div>
+      </div>
+   </div>
+</section>
+
+
+  <footer role="footer" style="position:relative;">
+    <div class="wrapper" style="margin-top: 40px;">
+      <div class="hearder grid">
+        <div class="gutters row flex footer-content"> 
+          <div class="col-lg-6 col-md-6 col-sm-12 all-post" data-aos="fade-up">
+            <p class="footer-title">About</p>
+            <div>
+              <p>My name is Hailey, originally from China, and I am a Product Designer. Design is my way of engaging with human beings and bring to life extraordinary products. </p>
+
+              <p>I am currently working at <a style="text-decoration: underline; color: #f15e57" href="https://www.dogoodpoints.com/">Do Good Points</a>, a community for donating and rewarding.</p> 
+
+              <p>As an adept problem solver, I would make a valuable addition to your team due to my diligent nature when it comes to successfully completing tasks and ensuring positive end-user experiences.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-none all-post" data-aos="fade-up">&nbsp;</div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 all-post" data-aos="fade-up">
+            <p class="footer-title">Contact</p>
+            <div>
+              <p><a href="mailto:design@haileyliu.me" style="text-decoration: underline;">design@haileyliu.me</a></p>
+              <p><a target="_blank" href="https://www.linkedin.com/in/hailey-liu-6b823a77/">LinkedIn</a></p>
+              <p><a target="_blank" href="https://dribbble.com/designbyhailey">Dribbble</a></p>
+              <p class="case-button"><a href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing" target="_blank" style="text-decoration: none;">View My Resume</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  
+      
+  
+              <p class="copy-right" style="margin-bottom: 40px;">&copy; 2019  Designed and Coded by Hailey Liu.</p>
+  
+      </footer>
+<!--        <footer role="mobile-footer">
+   
+      <div class="grid">
+         <div class="row gutter flex-parent">
+                  <div class="flex-child col-sm-4" style="border-right: 1px solid #4a4a4a;">
+                     <a href="index.html"><b>works</b></a>
+                  </div>
+                  <div class="flex-child col-sm-4">
+                     <a href="about.html">about</a>
+                  </div>
+                  <div class="flex-child col-sm-4" style="border-left: 1px solid #4a4a4a;">
+                     <a href="https://drive.google.com/file/d/1sC1HPMcDD8bRo5dYtkCiJO0OHOYGuo7O/view?usp=sharing">resume</a>
+                  </div>
+               </div>
+      </div>
+   
+       </footer> -->
+      <script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.js"></script>
+      <script>
+         mermaid.initialize({startOnLoad: true, theme: 'default'});
+
+         document.addEventListener("DOMContentLoaded",
+              function() {
+                  var div, n,
+                      v = document.getElementsByClassName("youtube-player");
+                  for (n = 0; n < v.length; n++) {
+                      div = document.createElement("div");
+                      div.setAttribute("data-id", v[n].dataset.id);
+                      div.innerHTML = labnolThumb(v[n].dataset.id);
+                      div.onclick = labnolIframe;
+                      v[n].appendChild(div);
+                  }
+              });
+
+          function labnolThumb(id) {
+              var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+                  play = '<div class="play"></div>';
+              return thumb.replace("ID", id) + play;
+          }
+
+          function labnolIframe() {
+              var iframe = document.createElement("iframe");
+              var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+              iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+              iframe.setAttribute("frameborder", "0");
+              iframe.setAttribute("allowfullscreen", "1");
+              this.parentNode.replaceChild(iframe, this);
+          }
+      </script>
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62455410-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-62455410-1');
+      </script>
+      <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+      <script type="text/javascript" src="lib/retina.js"></script> 
+
+   </body>
+</html>
