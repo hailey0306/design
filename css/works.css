@@ -1,0 +1,668 @@
+#nav-logo{
+	width: 64px;
+	
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.case-content h2{
+  font-size: 1.5em;
+}
+
+.hero-image{
+	margin: 20px 0 40px 0;
+}
+
+.case-summary{
+	position: relative;
+	top: 30%;
+	transform: translateY(-30%);
+
+}
+
+.chocolat-parent a p{
+  text-decoration: none;
+}
+
+.titlefont{
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top:8px;
+}
+
+
+.case-summary h1{
+	font-size: 3em;
+	text-align: center;
+}
+
+.case-summary p {
+	font-size: 1.4em;
+  font-weight: 300;
+}
+
+
+.back-to-top{
+	text-align: center;
+	background-color: #f2f2f2;
+	width: 15px;
+	width: auto;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	background-color: #f2f2f2;
+	padding: 0.35em 1em;
+	color: #51BA77;
+	text-align: center;
+	display: inline-block;
+	transition: background-color 400ms ease;
+}
+
+.middle, .middle p{
+	align-items: center;
+	vertical-align: middle;
+}
+
+.back-to-top a {
+	text-decoration: none;
+	color: #4a4a4a;
+}
+
+
+.work-section{
+	margin-bottom: 0;
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #4A4A4A;
+  padding-top: 140px;
+}
+
+
+
+
+
+.section-color{
+  margin-top:140px;
+  padding-bottom:140px;
+}
+
+
+.other-works:hover {
+	position: relative; 
+    transform: translateY(-5px);
+}
+
+.other-works img:hover {
+	box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.greybg {
+	background: #f2f2f2;
+	background-color: #f2f2f2;
+}
+
+.case-content ul li {
+	list-style: square inside none;
+
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+}
+.slick-slide {
+  margin: 0px 0px;
+}
+
+#user-goals ul li{
+  list-style: disc inside none;
+  font-size: 18px;
+}
+
+
+
+body {
+    padding-top: 80px;
+}
+
+header {
+	position:fixed; 
+	top:0; 
+	width: 100%; 
+	height: 80px; 
+	z-index: 10; 
+	transition: top 0.3s ease-in-out;
+}
+
+
+p {
+	font-size: 18px;
+	color: #4a4a4a;
+	line-height: 1.5em;
+  font-weight: 300;
+}
+
+.quote{
+  font-style: italic;
+  padding:0 50px;
+  
+}
+.quote p {
+  color: #8d8d8d;
+  font-weight: 200;
+}
+
+.quotes {
+  border-left: 8px solid #6c6c6c;
+  padding-left: 24px;
+}
+
+.quotes ul li {
+  list-style-type: none;
+}
+
+.nav-up {
+    top: -80px;
+}
+
+#top{
+  height: 100%;
+}
+
+#top .wrapper{
+  padding:30px 0 50px 0;
+}
+
+
+.side-nav{
+  margin-bottom: 70vh;
+  float: left;
+  font-size: 18px;
+  color: #282a37;
+  padding: 70px 50px 50px 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+  left: calc((100% - 1140px)/2);
+  transform: translateY(-10%);
+  z-index: 1;
+  line-height: 1.5;
+}
+
+.side-nav a{
+  color: #666666;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.side-nav h3{
+  color: #f15e57;
+}
+
+.btt a{
+  font-size: 18px;
+  color:#2b9e80; 
+  padding-left: 25px;
+}
+.side-nav li a{
+  padding-left: 25px;
+}
+.white-nav a, .white-nav h3{
+  color: #ffffff;
+}
+
+.side-nav li .on-section {
+  border-left: 5px solid #f15e57;
+  padding-left: 20px;
+  font-weight: 700;
+}
+.side-nav li a:hover{
+  color: #f15e57;
+}
+
+
+.side-nav li .on-section a{
+  color: #000000;
+
+}
+
+.btt a:active{
+  font-weight: 700;
+}
+
+
+
+body>section, .section-color>section, .fakesection{
+  margin-left: 200px;
+  padding: 0 50px;
+}
+
+video {
+    width: 100%;
+}
+
+.app-video {
+  display: block;
+}
+
+.more-detail p{
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+
+#next-project i {
+    color: #4a4a4a;
+    position: relative;
+    margin-left: 16px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#next-project{
+  font-size: 19px;
+  font-weight: 700;
+  display: block;
+  color: #4a4a4a;
+  text-decoration: none;
+  text-align: right;
+  margin-right: 20px;
+
+}
+
+#next-project:hover i {
+    color: #888888;
+    margin-right: -20px;
+    margin-left: 36px;
+}
+
+#next-project:hover{
+    color: #888888;
+}
+
+
+
+
+
+
+/* Extra Things */
+
+/*section:target {padding-top: 90px;}*/
+
+.fixed {
+    position: fixed;
+    top: 0
+} 
+/* ifrane responsive css Source: https://benmarshall.me/responsive-iframes/*/
+
+/* CSS for responsive iframe */
+/* ========================= */
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Liason-Sheet {
+  max-width: 1140px;
+  max-height: 700px; 
+  overflow: hidden;
+}
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+  position: relative;
+  height: 0;    /* gets height from padding-bottom */
+  /* following necessary for proper mobile behavior */
+  -webkit-overflow-scrolling: touch;
+  overflow: auto
+}
+ .responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* padding-bottom = h/w as % -- sets aspect ratio */
+/* YouTube video aspect ratio */
+.responsive-wrapper-wxh-650x315 {
+  padding-bottom: 56.25%;
+}
+.responsive-wrapper-wxh-550x2000 {
+  padding-bottom: 363.6364%;
+}
+
+/* general styles */
+/* ============== */
+.set-border {
+  border: 5px inset #4f4f4f;
+}
+.set-box-shadow { 
+  -webkit-box-shadow: 4px 4px 14px #4f4f4f;
+  -moz-box-shadow: 4px 4px 14px #4f4f4f;
+  box-shadow: 4px 4px 14px #4f4f4f;
+}
+.set-padding {
+  padding: 40px;
+}
+.set-margin {
+  margin: 30px;
+}
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/*ifrane responsive css end*/
+
+
+
+
+
+
+/*Tabs css*/
+
+
+.tab {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #888;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabs {
+  display: table;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+.tabs li {
+  float: left;
+  line-height: 38px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.tabs a {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #fff;
+  color: #888;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0;
+  outline: none;
+  padding: 0 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid #2c89e5;
+}
+
+.tabs_item {
+  display: none;
+  padding: 30px 0;
+}
+.tabs_item h3 {
+  font-weight: bold;
+  color: #2c89e5;
+  font-size: 24px;
+}
+.tabs_item img {
+	height: 500px;
+	width: auto;
+  	float: left;
+  	overflow: scroll;
+  	scroll-direction: horizontal;
+}
+
+.scroll-image{
+	overflow-x: scroll;
+}
+.tabs_item:first-child {
+  display: block;
+}
+
+.current a {
+  color: #fff;
+  background: #2c89e5;
+}
+
+/*Tabs css end*/
+
+/*
+  Responsive CSS MacBook Retina Mockup by Henri Peetsmann
+  https://codepen.io/henripeetsmann/
+*/
+
+.css-mb {
+  max-width: 1000px; /* Set the desired maximum width of the macbook */
+  min-width: 50px; /* Set the desired minimum width of the macbook */
+  margin: 0 auto; /* Align mockup to center */
+}
+
+.css-mb div {
+  box-sizing: border-box !important; /* Just in case */
+}
+
+/* Center the display */
+.css-mb .mb-display-position {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* The display */
+.css-mb .mb-display {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 62.9442%;
+  background: #373435;
+  
+  -webkit-border-top-left-radius:  3.5% 5.3075%;
+      -moz-border-radius-topleft:  3.5% 5.3075%;
+          border-top-left-radius:  3.5% 5.3075%;
+  
+  -webkit-border-top-right-radius: 3.5% 5.3075%;
+      -moz-border-radius-toptight: 3.5% 5.3075%;
+          border-top-right-radius: 3.5% 5.3075%;
+}
+
+/* Webcam */
+/* Browser may not render a perfect circle */
+.css-mb .mb-display:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 1%;
+  height: 1.5164%;
+  margin-left: -0.5%;
+  border-radius: 50%;
+  background: #525252;
+}
+
+/* Glare */
+/* Browser may not render the top and right offset evenly */
+.css-mb .mb-display:after {
+  content: '';
+  display: none;
+  position: absolute;
+  right: 0.4%;
+  top: 0.64%; 
+  width: 62.5%;
+  height: 100%;
+  
+  background: none; /* Hide the gradient on older browsers */
+  background:    -moz-linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* FF3.6+ */
+  background: -webkit-linear-gradient(36deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* Chrome10+ and Safari5.1+ compute the degree differently */
+  background:      -o-linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* Opera 11.10+ */
+  background:     -ms-linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%); /* IE10+ */
+  background:         linear-gradient(55deg, rgba(0,0,0,0) 61%, rgba(255,255,255,0.05) 61%);
+  
+  -webkit-border-top-right-radius: 5.3075%;
+      -moz-border-radius-toptight: 5.3075%;
+          border-top-right-radius: 5.3075%;
+}
+
+/* Only show glare, if the class is applied */
+.css-mb.with-glare .mb-display:after { display: block; }
+
+/* Position the screen and give make it the right size, ratio 16:10 */
+.css-mb .mb-screen-position {
+  position: absolute;
+  top: 8.0%;
+  width: 93.2%;
+  left: 3.4%;
+  height: 0;
+  margin: 0;
+  padding-bottom: 53.75%; /* Ratio */
+  /*53.75% for vimeo videos*/
+}
+
+/* Give parent (this element) a "height", so that child elements can use height: 100%;*/
+.css-mb .mb-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #4b4b4d; /* bg color if content is not big enough, or rendering is off */
+}
+
+/* Image on the screen */
+.css-mb .mb-screen img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Iframe on the screen */
+.css-mb .mb-screen iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Macbook body */
+.css-mb .mb-body {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 2.3%;
+  background: #e6e7e8;
+}
+
+/* The groove */
+.css-mb .mb-body:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 14.0740%;
+  height: 0;
+  padding-bottom: 1.4814%;
+  margin-left: -7.037%;
+  background: #a9abae;
+  
+  -webkit-border-bottom-left-radius:  7.0370% 50%;
+      -moz-border-radius-bottomleft:  7.0370% 50%;
+          border-bottom-left-radius:  7.0370% 50%;
+  
+  -webkit-border-bottom-right-radius: 7.0370% 50%;
+      -moz-border-radius-bottomtight: 7.0370% 50%;
+          border-bottom-right-radius: 7.0370% 50%;  
+}
+
+/* Macbook bottom */
+.css-mb .mb-bottom-cover {
+  width: 100%;
+  height: 0;
+  padding-bottom: 0.7407%;
+  background: #a9abae;
+  
+  -webkit-border-bottom-left-radius:  12% 600%;
+      -moz-border-radius-bottomleft:  12% 600%;
+          border-bottom-left-radius:  12% 600%;
+  
+  -webkit-border-bottom-right-radius: 12% 600%;
+      -moz-border-radius-bottomtight: 12% 600%;
+          border-bottom-right-radius: 12% 600%; 
+}
+
+
+
+/*Testing blocks*/
+.blackblock{
+  /*background-color: red;*/
+  height: 100%;
+  width: 100%;
+}
+
+.iphone-container{
+  /*background-color: blue;*/
+  margin: auto 10% auto 10%;
+}
+
+.liang-container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+
+@keyframes threedLoad {
+  
+  0% { 
+      -webkit-transform: rotateX(10deg) rotateY(5deg) scale(0.95);
+    -moz-transform:rotateX(10deg) rotateY(5deg) scale(0.95);
+    -ms-transform:rotateX(10deg) rotateY(5deg) scale(0.95);
+    -o-transform:rotateX(10deg) rotateY(5deg) scale(0.95);
+    transform: rotateX(10deg) rotateY(5deg) scale(0.95);
+  }
+
+100% { 
+      -webkit-transform:  rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);}
+}
+
+
+
+
+
+
+
+[id*="hero-container"] svg {
+ -webkit-animation: threedLoad  3s ease-in-out 1;
+  -moz-animation: threedLoad  3s ease-in-out 1;
+  -o-animation: threedLoad 3s ease-in-out 1;
+  -ms-animation: threedLoad 3s ease-in-out 1;
+  animation: threedLoad 3s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
