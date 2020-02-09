@@ -128,7 +128,7 @@ h2{
 #anim_container{
 	margin: 0 auto;
 	max-width: 760px;
-	max-height: 460px;
+	max-height: 360px;
 }
 
 #anim_container svg {
